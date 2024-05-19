@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Cremallera de Montserrat</string>
+
+    // Splash
+    <string name="titolDelSplash">Montserrat Express</string>
+
+    // Login
+    <string name="loginTituloUn">MONTSERRAT</string>
+    <string name="loginTituloDos">EXPRESS</string>
+    <string name="loginCorreu">CORREU</string>
+    <string name="loginContrasenya">CONTRASENYA</string>
+    <string name="loginBotoInciarSessió">INICIAR SESSIÓ</string>
+    <string name="loginTextContrasenya">Has oblidat la contrasenta?</string>
+    <string name="loginTextRegistre">Encara no tens compte?</string>
+    <string name="loginRegistre">Crea</string>
+
 </resources>
