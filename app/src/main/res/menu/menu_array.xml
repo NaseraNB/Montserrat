@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tren"
+        android:title="TREN"/>
+    <item
+        android:id="@+id/aeri"
+        android:title="AERI"/>
+    <item
+        android:id="@+id/funicular"
+        android:title="FUNICULAR"/>
+</menu>

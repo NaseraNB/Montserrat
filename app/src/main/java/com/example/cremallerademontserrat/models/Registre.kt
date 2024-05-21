@@ -3,29 +3,22 @@ package com.example.cremallerademontserrat.models
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
 import android.widget.ImageView
-import android.widget.TextView
 import com.example.cremallerademontserrat.R
 
-class Inici_De_Sessio : AppCompatActivity() {
+class Registre : AppCompatActivity() {
 
-    private lateinit var loginRegistre: TextView
     private lateinit var iniciImatge: ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_inici_de_sessio)
+        setContentView(R.layout.activity_registre)
 
-        loginRegistre = findViewById<TextView>(R.id.loginRegistre)
-        iniciImatge = findViewById(R.id.iniciImatge)
-
-        loginRegistre.setOnClickListener() {
-            anarAlRegistre()
-        }
+        iniciImatge = findViewById(R.id.registreImatge)
 
         iniciImatge.setOnClickListener(){
             obrirMenu()
         }
+
     }
 
     private fun obrirMenu(){
@@ -34,15 +27,9 @@ class Inici_De_Sessio : AppCompatActivity() {
         finish()  // Tanca aquesta activitat.
     }
 
-    private fun anarAlRegistre() {
-        val intent = Intent(this, Registre::class.java) // Crea un Intent per canviar a la pantalla.
-        startActivity(intent) // Inicia la nova activitat
-        finish()  // Tanca aquesta activitat.
-    }
-
     override fun onBackPressed() {
         super.onBackPressed()
-        val intent = Intent(this@Inici_De_Sessio, Inici_De_Sessio::class.java)
+        val intent = Intent(this@Registre, Inici_De_Sessio::class.java)
         startActivity(intent)
         finish()
     }

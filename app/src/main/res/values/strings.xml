@@ -1,10 +1,12 @@
 <resources>
+
+    <!-- Nom de l'aplicació -->
     <string name="app_name">Cremallera de Montserrat</string>
 
-    // Splash
+    <!-- Splash -->
     <string name="titolDelSplash">Montserrat Express</string>
 
-    // Login
+    <!-- Login -->
     <string name="loginTituloUn">MONTSERRAT</string>
     <string name="loginTituloDos">EXPRESS</string>
     <string name="loginCorreu">CORREU</string>
@@ -13,5 +15,49 @@
     <string name="loginTextContrasenya">Has oblidat la contrasenta?</string>
     <string name="loginTextRegistre">Encara no tens compte?</string>
     <string name="loginRegistre">Crea</string>
+
+    <!-- Registre -->
+    <string name="registreTitulUn">CREA EL TEU</string>
+    <string name="registreTitulDos">USUARI</string>
+    <string name="registreNom">NOM</string>
+    <string name="registreCorreu">CORREU</string>
+    <string name="registreContraseña">CONTRASENYA</string>
+    <string name="registreBoto">CREAR</string>
+
+
+    <!-- Menu -->
+    <string name="menuNom">NOM USUARI</string>
+    <string name="menuInici">INICI</string>
+    <string name="menuTransport">TRANSPORT</string>
+    <string name="menuTren">TREN</string>
+    <string name="menuAeri">AERI</string>
+    <string name="menuFunicular">FUNICULAR</string>
+    <string name="menuRutes">RUTES</string>
+    <string name="menuNosaltres">NOSALTRES</string>
+    <string name="menuIdioma">IDIOMA</string>
+    <string name="menuTancarSessio">TANCAR SESSIÓ</string>
+
+    <!-- Rutes -->
+    <string name="rutesTítol">RUTES DE SENDERISME</string>
+    <string name="rutesAvis">  </string>
+
+    <!-- Inici -->
+    <string name="iniciTitol">INICI</string>
+    <string name="iniciAvis">  </string>
+    <string name="iniciReserves">Reserves</string>
+    <string name="iniciIcon"></string>
+    <string name="iniciTipus">ASSOLELLAT</string>
+    <string name="iniciTemp">20ºC</string>
+    <string name="iniciAvui">21/05/2024</string>
+    <string name="iniciReserveTitol">Caminada general</string>
+    <string name="iniciReservaData">21/05/2024</string>
+    <string name="iniciReserveDescripcio">Descripció</string>
+    <string name="iniciNovetats">Novetats</string>
+    <string name="iniciNoTitol">Esolanía de Montserrat</string>
+    <string name="iniciNoData">21/05/2024</string>
+    <string name="iniciBotoInici">Inici</string>
+    <string name="iniciBotoTransport">Transport</string>
+
+
 
 </resources>
