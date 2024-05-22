@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "954584025750",
+    "project_id": "montserrat-express",
+    "storage_bucket": "montserrat-express.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:954584025750:android:b9c3a0f6a976bafb0710b7",
+        "android_client_info": {
+          "package_name": "com.example.cremallerademontserrat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9HOWc-MV82KOUT55XyG4uaKQ56GAK330"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

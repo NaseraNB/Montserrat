@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,418 +7,428 @@
     android:background="@color/white"
     tools:context=".models.Rutes">
 
-    <View
-        android:id="@+id/blueBackground"
-        android:layout_width="415dp"
-        android:layout_height="87dp"
-        android:background="#5F574F"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.04" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline26"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.93" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline27"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.023640662" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline30"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.093851134" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline31"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.85" />
-
-    <ImageView
-        android:id="@+id/iniciImatge"
-        android:layout_width="33dp"
-        android:layout_height="34dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline30"
-        app:layout_constraintEnd_toStartOf="@+id/guideline26"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline31"
-        app:layout_constraintTop_toTopOf="@+id/guideline27"
-        app:layout_constraintVertical_bias="0.428"
-        app:srcCompat="@drawable/menulogo" />
-
-    <TextView
-        android:id="@+id/iniciTitol"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/iniciTitol"
-        android:textColor="@color/white"
-        android:textSize="26dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/guideline30"
-        app:layout_constraintEnd_toStartOf="@+id/guideline31"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline25"
-        app:layout_constraintTop_toTopOf="@+id/guideline27"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <View
-        android:id="@+id/avis"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:background="#555555"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.5"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/blueBackground" />
-
-
-    <TextView
-        android:id="@+id/iniciAvis"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/avis_prova"
-        android:drawablePadding="10dp"
-        android:gravity="center_vertical|center_horizontal"
-        android:paddingLeft="10dp"
-        android:paddingRight="55dp"
-        android:text="@string/iniciAvis"
-        android:textColor="@color/white"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/avis"
-        app:layout_constraintEnd_toStartOf="@+id/guideline26"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline25"
-        app:layout_constraintTop_toTopOf="@+id/guideline30"
-        app:layout_constraintVertical_bias="0.472" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline29"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.15571776" />
-
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline28"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.14841849" />
-
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/newSquare"
-        android:layout_width="343dp"
-        android:layout_height="113dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/gris"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/avis">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/iniciIcon"
-            android:layout_width="81dp"
-            android:layout_height="82dp"
-            android:layout_marginStart="16dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+        <View
+            android:id="@+id/blueBackground"
+            android:layout_width="435dp"
+            android:layout_height="83dp"
+            android:background="#5F574F"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.483"
-            app:srcCompat="@drawable/baseline_warning_amber_24" />
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/iniciTipus"
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline25"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="16dp"
-            android:text="@string/iniciTipus"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.0" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.93" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.023640662" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.09" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.85" />
+
+        <ImageView
+            android:id="@+id/iniciImatge"
+            android:layout_width="33dp"
+            android:layout_height="34dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline33"
+            app:layout_constraintEnd_toStartOf="@+id/guideline26"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline31"
+            app:layout_constraintTop_toTopOf="@+id/guideline27"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/menulogo" />
+
+        <TextView
+            android:id="@+id/iniciTitol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/iniciTitol"
+            android:textColor="@color/white"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/guideline33"
+            app:layout_constraintEnd_toStartOf="@+id/guideline31"
+            app:layout_constraintHorizontal_bias="0.066"
+            app:layout_constraintStart_toStartOf="@+id/guideline25"
+            app:layout_constraintTop_toTopOf="@+id/guideline27"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <View
+            android:id="@+id/avis"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="#555555"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/blueBackground" />
+
+
+        <TextView
+            android:id="@+id/iniciAvis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/avis_prova"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="55dp"
+            android:text="@string/iniciAvis"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/avis"
+            app:layout_constraintEnd_toStartOf="@+id/guideline26"
+            app:layout_constraintHorizontal_bias="0.054"
+            app:layout_constraintStart_toStartOf="@+id/guideline25"
+            app:layout_constraintTop_toTopOf="@+id/guideline30"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/newSquare"
+            android:layout_width="343dp"
+            android:layout_height="113dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/gris"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/avis">
+
+            <ImageView
+                android:id="@+id/iniciIcon"
+                android:layout_width="81dp"
+                android:layout_height="82dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.483"
+                app:srcCompat="@drawable/baseline_warning_amber_24" />
+
+            <TextView
+                android:id="@+id/iniciTipus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/iniciTipus"
+                android:textColor="#5F574F"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/iniciIcon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/iniciTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/iniciTemp"
+                android:textColor="#5F574F"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.117"
+                app:layout_constraintStart_toEndOf="@+id/iniciIcon"
+                app:layout_constraintTop_toBottomOf="@+id/iniciTipus" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/iniciAvui"
+                android:textColor="#5F574F"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.865"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iniciTemp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/iniciReserves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/iniciReserves"
             android:textColor="#5F574F"
             android:textSize="25dp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline26"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/iniciIcon"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toStartOf="@+id/guideline34"
+            app:layout_constraintTop_toBottomOf="@+id/newSquare" />
 
-        <TextView
-            android:id="@+id/iniciTemp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <View
+            android:id="@+id/lineBelowReserves"
+            android:layout_width="346dp"
+            android:layout_height="3dp"
             android:layout_marginTop="4dp"
-            android:text="@string/iniciTemp"
-            android:textColor="#5F574F"
-            android:textSize="18dp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.117"
-            app:layout_constraintStart_toEndOf="@+id/iniciIcon"
-            app:layout_constraintTop_toBottomOf="@+id/iniciTipus" />
+            android:background="#5F574F"
+            app:layout_constraintEnd_toStartOf="@+id/guideline26"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline34"
+            app:layout_constraintTop_toBottomOf="@+id/iniciReserves" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="@string/iniciAvui"
-            android:textColor="#5F574F"
-            android:textStyle="bold"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="343dp"
+            android:layout_height="220dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/gris"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.865"
+            app:layout_constraintHorizontal_bias="0.439"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/iniciTemp" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            app:layout_constraintTop_toBottomOf="@+id/lineBelowReserves">
 
-    <TextView
-        android:id="@+id/iniciReserves"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="@string/iniciReserves"
-        android:textColor="#5F574F"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/guideline26"
-        app:layout_constraintHorizontal_bias="0.072"
-        app:layout_constraintStart_toStartOf="@+id/guideline25"
-        app:layout_constraintTop_toBottomOf="@+id/newSquare" />
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/reservaImatge"
+                android:layout_width="262dp"
+                android:layout_height="136dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:tint="#80000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.493"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/circular"
+                app:srcCompat="@drawable/imagen_uno" />
 
-    <View
-        android:id="@+id/lineBelowReserves"
-        android:layout_width="346dp"
-        android:layout_height="3dp"
-        android:layout_marginTop="4dp"
-        android:background="#5F574F"
-        app:layout_constraintEnd_toStartOf="@+id/guideline26"
-        app:layout_constraintHorizontal_bias="0.945"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iniciReserves" />
+            <TextView
+                android:id="@+id/iniciReserveTitol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/iniciReserveTitol"
+                android:textColor="#5F574F"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/iniciReservaData"
+                app:layout_constraintHorizontal_bias="0.645"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reservaImatge" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout2"
-        android:layout_width="343dp"
-        android:layout_height="220dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/gris"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lineBelowReserves">
+            <TextView
+                android:id="@+id/iniciReservaData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="40dp"
+                android:text="@string/iniciReservaData"
+                android:textColor="#5F574F"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reservaImatge" />
+
+            <View
+                android:id="@+id/lineados"
+                android:layout_width="272dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="#5F574F"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.563"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iniciReserveTitol" />
+
+            <TextView
+                android:id="@+id/iniciReserveDescripcio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/iniciReserveDescripcio"
+                android:textColor="#5F574F"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.144"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lineados" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/iniciNovetats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/iniciNovetats"
+            android:textColor="#5F574F"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline26"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline34"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+
+        <View
+            android:id="@+id/lineaTres"
+            android:layout_width="346dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="4dp"
+            android:background="#5F574F"
+            app:layout_constraintEnd_toStartOf="@+id/guideline26"
+            app:layout_constraintHorizontal_bias="0.23"
+            app:layout_constraintStart_toStartOf="@+id/guideline34"
+            app:layout_constraintTop_toBottomOf="@+id/iniciNovetats" />
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/reservaImatge"
-            android:layout_width="262dp"
-            android:layout_height="136dp"
+            android:id="@+id/novetatImatge"
+            android:layout_width="305dp"
+            android:layout_height="157dp"
             android:layout_marginTop="10dp"
             android:padding="5dp"
             android:tint="#80000000"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.493"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lineaTres"
             app:shapeAppearanceOverlay="@style/circular"
             app:srcCompat="@drawable/imagen_uno" />
 
-        <TextView
-            android:id="@+id/iniciReserveTitol"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-light"
-            android:text="@string/iniciReserveTitol"
-            android:textColor="#5F574F"
-            android:textSize="23dp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/iniciReservaData"
-            app:layout_constraintHorizontal_bias="0.645"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/reservaImatge" />
 
         <TextView
-            android:id="@+id/iniciReservaData"
+            android:id="@+id/novetatTitol"
+            android:layout_width="149dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="20dp"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/novetatImatge"
+            app:layout_constraintStart_toStartOf="@+id/novetatImatge"
+            app:layout_constraintTop_toBottomOf="@+id/lineaTres"
+            app:layout_constraintVertical_bias="0.88" />
+
+        <TextView
+            android:id="@+id/novetatData"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="40dp"
-            android:text="@string/iniciReservaData"
-            android:textColor="#5F574F"
-            android:textSize="10dp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/reservaImatge" />
+            android:layout_marginTop="124dp"
+            android:text="20/05/2024"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/novetatImatge"
+            app:layout_constraintEnd_toStartOf="@+id/guideline31"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toEndOf="@+id/novetatTitol"
+            app:layout_constraintTop_toBottomOf="@+id/lineaTres"
+            app:layout_constraintVertical_bias="0.21" />
 
         <View
-            android:id="@+id/lineados"
-            android:layout_width="272dp"
-            android:layout_height="1dp"
-            android:layout_marginTop="4dp"
+            android:id="@+id/lineaFinal"
+            android:layout_width="435dp"
+            android:layout_height="45dp"
             android:background="#5F574F"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.563"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/iniciReserveTitol" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/iniciReserveDescripcio"
+            android:id="@+id/iniciBotoInici"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="@string/iniciReserveDescripcio"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/iniciBotoInici"
             android:textColor="#5F574F"
-            android:textSize="14dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.144"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/liniaInici"
+            app:layout_constraintEnd_toStartOf="@+id/iniciBotoTransport"
+            app:layout_constraintHorizontal_bias="0.552"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/lineados" />
+            app:layout_constraintTop_toBottomOf="@+id/novetatImatge"
+            app:layout_constraintVertical_bias="0.793" />
+
+        <TextView
+            android:id="@+id/iniciBotoTransport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="96dp"
+            android:text="@string/iniciBotoTransport"
+            android:textColor="#5F574F"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/lineaFinal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/novetatImatge"
+            app:layout_constraintVertical_bias="0.027" />
+
+        <View
+            android:id="@+id/liniaInici"
+            android:layout_width="85dp"
+            android:layout_height="3dp"
+            android:layout_marginBottom="24dp"
+            android:background="#5F574F"
+            app:layout_constraintBottom_toTopOf="@+id/lineaFinal"
+            app:layout_constraintEnd_toStartOf="@+id/liniaTransport"
+            app:layout_constraintHorizontal_bias="0.597"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/liniaTransport"
+            android:layout_width="85dp"
+            android:layout_height="3dp"
+            android:layout_marginEnd="92dp"
+            android:layout_marginBottom="24dp"
+            android:background="#5F574F"
+            app:layout_constraintBottom_toTopOf="@+id/lineaFinal"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.06823028" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.08470588" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <TextView
-        android:id="@+id/iniciNovetats"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/iniciNovetats"
-        android:textColor="#5F574F"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/guideline26"
-        app:layout_constraintHorizontal_bias="0.124"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
-
-    <View
-        android:id="@+id/lineaTres"
-        android:layout_width="346dp"
-        android:layout_height="3dp"
-        android:layout_marginTop="4dp"
-        android:background="#5F574F"
-        app:layout_constraintEnd_toStartOf="@+id/guideline26"
-        app:layout_constraintHorizontal_bias="0.678"
-        app:layout_constraintStart_toStartOf="@+id/guideline25"
-        app:layout_constraintTop_toBottomOf="@+id/iniciNovetats" />
-
-
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/novetatImatge"
-        android:layout_width="305dp"
-        android:layout_height="157dp"
-        android:layout_marginTop="10dp"
-        android:padding="5dp"
-        android:tint="#80000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lineaTres"
-        app:shapeAppearanceOverlay="@style/circular"
-        app:srcCompat="@drawable/imagen_uno" />
-
-    <TextView
-        android:id="@+id/novetatTitol"
-        android:layout_width="129dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="8dp"
-        android:text="@string/iniciNoTitol"
-        android:textColor="#FFFFFF"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/novetatImatge"
-        app:layout_constraintStart_toStartOf="@+id/guideline29"
-        app:layout_constraintTop_toBottomOf="@+id/lineaTres"
-        app:layout_constraintVertical_bias="0.833" />
-
-    <TextView
-        android:id="@+id/novetatData"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="124dp"
-        android:text="20/05/2024"
-        android:textColor="#FFFFFF"
-        android:textSize="14dp"
-        app:layout_constraintBottom_toBottomOf="@+id/novetatImatge"
-        app:layout_constraintEnd_toStartOf="@+id/guideline31"
-        app:layout_constraintHorizontal_bias="0.808"
-        app:layout_constraintStart_toEndOf="@+id/novetatTitol"
-        app:layout_constraintTop_toBottomOf="@+id/lineaTres"
-        app:layout_constraintVertical_bias="0.0" />
-
-
-    <View
-        android:id="@+id/lineaFinal"
-        android:layout_width="410dp"
-        android:layout_height="45dp"
-        android:background="#5F574F"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/iniciBotoInici"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/iniciBotoInici"
-        android:textColor="#5F574F"
-        android:textSize="16dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/liniaInici"
-        app:layout_constraintEnd_toStartOf="@+id/iniciBotoTransport"
-        app:layout_constraintHorizontal_bias="0.6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/novetatImatge"
-        app:layout_constraintVertical_bias="0.812" />
-
-    <TextView
-        android:id="@+id/iniciBotoTransport"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="104dp"
-        android:text="@string/iniciBotoTransport"
-        android:textColor="#5F574F"
-        android:textSize="16dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/liniaTransport"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/novetatImatge"
-        app:layout_constraintVertical_bias="0.812" />
-
-    <View
-        android:id="@+id/liniaInici"
-        android:layout_width="85dp"
-        android:layout_height="3dp"
-        android:layout_marginBottom="24dp"
-        android:background="#5F574F"
-        app:layout_constraintBottom_toTopOf="@+id/lineaFinal"
-        app:layout_constraintEnd_toStartOf="@+id/liniaTransport"
-        app:layout_constraintHorizontal_bias="0.636"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <View
-        android:id="@+id/liniaTransport"
-        android:layout_width="85dp"
-        android:layout_height="3dp"
-        android:layout_marginEnd="96dp"
-        android:layout_marginBottom="24dp"
-        android:background="#5F574F"
-        app:layout_constraintBottom_toTopOf="@+id/lineaFinal"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

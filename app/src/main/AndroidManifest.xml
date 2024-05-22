@@ -17,6 +17,9 @@
         android:theme="@style/Theme.CremalleraDeMontserrat"
         tools:targetApi="31">
         <activity
+            android:name=".models.Transport"
+            android:exported="false" />
+        <activity
             android:name=".models.Inici"
             android:exported="false" />
         <activity
