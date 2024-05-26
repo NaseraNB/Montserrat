@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".models.FunicularSantJoan">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:id="@+id/blocMarroUn"
+            android:layout_width="wrap_content"
+            android:layout_height="86dp"
+            android:background="#5F574F"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/avis"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="#555555"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/blocMarroUn" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.07569343" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.01" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.06" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.78" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.92" />
+
+        <TextView
+            android:id="@+id/transportAvis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/avis_prova"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="55dp"
+            android:text="@string/rutesAvis"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/avis"
+            app:layout_constraintEnd_toStartOf="@+id/guideline44"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline39"
+            app:layout_constraintTop_toTopOf="@+id/avis"
+            app:layout_constraintVertical_bias="0.472" />
+
+        <ImageView
+            android:id="@+id/funicularMenu"
+            android:layout_width="33dp"
+            android:layout_height="34dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline41"
+            app:layout_constraintEnd_toStartOf="@+id/guideline44"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline43"
+            app:layout_constraintTop_toTopOf="@+id/guideline40"
+            app:layout_constraintVertical_bias="0.093"
+            app:srcCompat="@drawable/menulogo" />
+
+        <TextView
+            android:id="@+id/aeriTitol"
+            android:layout_width="190dp"
+            android:layout_height="61dp"
+            android:text="@string/funicularTitolJoan"
+            android:textColor="@color/white"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/guideline41"
+            app:layout_constraintEnd_toStartOf="@+id/guideline43"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline39"
+            app:layout_constraintTop_toTopOf="@+id/blocMarroUn"
+            app:layout_constraintVertical_bias="0.888" />
+
+        <TextView
+            android:id="@+id/funicularCalendari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/aeriCalendari"
+            android:textColor="#5F574F"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline44"
+            app:layout_constraintHorizontal_bias="0.138"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/avis" />
+
+        <View
+            android:id="@+id/lineUn"
+            android:layout_width="357dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="3dp"
+            android:background="#5F574F"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/funicularCalendari" />
+
+        <ImageView
+            android:id="@+id/santjoanfunicular"
+            android:layout_width="361dp"
+            android:layout_height="448dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.545"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lineUn"
+            app:srcCompat="@drawable/santjoanfunicular" />
+
+        <Button
+            android:id="@+id/funicularSantJoanInfo"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/boto_marror_groc"
+            android:text="@string/aeriInfo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.542"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/santjoanfunicular" />
+
+        <View
+            android:id="@+id/vistaTarifa"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_marginTop="32dp"
+            android:background="#E1E0DF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/funicularSantJoanInfo" />
+
+        <TextView
+            android:id="@+id/aeriTarifes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/aeriTarifes"
+            android:textColor="#5F574F"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.091"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/vistaTarifa" />
+
+        <View
+            android:id="@+id/lineDos"
+            android:layout_width="357dp"
+            android:layout_height="3dp"
+            android:background="#5F574F"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aeriTarifes" />
+
+        <View
+            android:id="@+id/tarifasBlocBlancDos"
+            android:layout_width="127dp"
+            android:layout_height="179dp"
+            android:layout_marginTop="56dp"
+            android:background="@drawable/shadow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.894"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/listaTarifasAeri" />
+
+        <View
+            android:id="@+id/tarifasBlocBlanc"
+            android:layout_width="127dp"
+            android:layout_height="179dp"
+            android:layout_marginTop="56dp"
+            android:background="@drawable/shadows"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/listaTarifasAeri" />
+
+        <View
+            android:id="@+id/tarifasBlocGroc"
+            android:layout_width="127dp"
+            android:layout_height="179dp"
+            android:layout_marginTop="56dp"
+            android:background="@drawable/boto_groc_dos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.109"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/listaTarifasAeri" />
+
+        <View
+            android:id="@+id/listaTarifasAeri"
+            android:layout_width="357dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/boto_marror"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lineDos" />
+
+        <TextView
+            android:id="@+id/aeriPreus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/aeriPreus"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/listaTarifasAeri"
+            app:layout_constraintStart_toStartOf="@+id/guideline39"
+            app:layout_constraintTop_toTopOf="@+id/listaTarifasAeri"
+            app:layout_constraintVertical_bias="0.534" />
+
+        <TextView
+            android:id="@+id/aeriAnada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:text="@string/aeriAnada"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/listaTarifasAeri"
+            app:layout_constraintEnd_toStartOf="@+id/textView14"
+            app:layout_constraintHorizontal_bias="0.083"
+            app:layout_constraintStart_toEndOf="@+id/aeriPreus"
+            app:layout_constraintTop_toTopOf="@+id/listaTarifasAeri"
+            app:layout_constraintVertical_bias="0.53" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="71dp"
+            android:layout_height="44dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/aeriAnadaTornada"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/listaTarifasAeri"
+            app:layout_constraintEnd_toStartOf="@+id/guideline44"
+            app:layout_constraintTop_toTopOf="@+id/listaTarifasAeri"
+            app:layout_constraintVertical_bias="0.576" />
+
+
+        <TextView
+            android:id="@+id/tarifasAdult"
+            android:layout_width="97dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/cremalleraAdult"
+            android:textColor="@color/marro"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tarifasBlocGroc"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toStartOf="@+id/tarifasBlocGroc"
+            app:layout_constraintTop_toTopOf="@+id/tarifasBlocGroc" />
+
+        <TextView
+            android:id="@+id/tarifasInfantil"
+            android:layout_width="97dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/cremalleraInfaltil"
+            android:textColor="@color/marro"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tarifasBlocGroc"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toStartOf="@+id/tarifasBlocGroc"
+            app:layout_constraintTop_toBottomOf="@+id/tarifasAdult" />
+
+        <TextView
+            android:id="@+id/tarifasMenor"
+            android:layout_width="97dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/cremalleraMenor"
+            android:textColor="@color/marro"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tarifasBlocGroc"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toStartOf="@+id/tarifasBlocGroc"
+            app:layout_constraintTop_toBottomOf="@+id/tarifasInfantil" />
+
+        <TextView
+            android:id="@+id/anadaPreuUn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="8,95 €"
+            android:textColor="@color/marro"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tarifasBlocBlanc"
+            app:layout_constraintHorizontal_bias="0.556"
+            app:layout_constraintStart_toStartOf="@+id/tarifasBlocBlanc"
+            app:layout_constraintTop_toTopOf="@+id/tarifasBlocBlanc" />
+
+        <TextView
+            android:id="@+id/anadaPreuDos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="4,70 €"
+            android:textColor="@color/marro"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tarifasBlocBlanc"
+            app:layout_constraintHorizontal_bias="0.556"
+            app:layout_constraintStart_toStartOf="@+id/tarifasBlocBlanc"
+            app:layout_constraintTop_toBottomOf="@+id/anadaPreuUn" />
+
+        <TextView
+            android:id="@+id/anadaGratis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/cremalleraGratis"
+            android:textAlignment="center"
+            android:textColor="@color/marro"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/tarifasBlocBlanc"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="@+id/tarifasBlocBlanc"
+            app:layout_constraintTop_toBottomOf="@+id/anadaPreuDos" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="11,23 €"
+            android:textColor="@color/marro"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tarifasBlocBlancDos"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="@+id/tarifasBlocBlancDos"
+            app:layout_constraintTop_toTopOf="@+id/tarifasBlocBlancDos" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="10dp"
+            android:text="6,75 €"
+            android:textColor="@color/marro"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tarifasBlocBlancDos"
+            app:layout_constraintHorizontal_bias="0.443"
+            app:layout_constraintStart_toStartOf="@+id/tarifasBlocBlancDos"
+            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/cremalleraGratis"
+            android:textAlignment="center"
+            android:textColor="@color/marro"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/tarifasBlocBlancDos"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="@+id/tarifasBlocBlancDos"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/boto_marror_groc"
+            android:text="@string/cremalleraComprar"
+            app:layout_constraintBottom_toBottomOf="@+id/vistaTarifa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.543"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/listaTarifasAeri"
+            app:layout_constraintVertical_bias="0.942" />
+
+        <TextView
+            android:id="@+id/transportBotoInici"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/transportBotoInici"
+            android:textColor="#5F574F"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/textView10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vistaTarifa" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/transportBotoTransport"
+            android:textColor="#5F574F"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.729"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vistaTarifa" />
+
+        <View
+            android:id="@+id/liniaTransport"
+            android:layout_width="100dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="5dp"
+            android:background="#5F574F"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.759"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <View
+            android:id="@+id/lineaFinal"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginTop="24dp"
+            android:background="#5F574F"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/liniaTransport" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

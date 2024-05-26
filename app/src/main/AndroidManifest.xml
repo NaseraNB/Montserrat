@@ -17,6 +17,24 @@
         android:theme="@style/Theme.CremalleraDeMontserrat"
         tools:targetApi="31">
         <activity
+            android:name=".models.NovetatsInfo"
+            android:exported="false" />
+        <activity
+            android:name=".models.Novetats"
+            android:exported="false" />
+        <activity
+            android:name=".models.FunicularSantaCova"
+            android:exported="false" />
+        <activity
+            android:name=".models.FunicularSantJoan"
+            android:exported="false" />
+        <activity
+            android:name=".models.Aeri"
+            android:exported="false" />
+        <activity
+            android:name=".models.Cremallera"
+            android:exported="false" />
+        <activity
             android:name=".models.Transport"
             android:exported="false" />
         <activity
@@ -33,26 +51,16 @@
             android:exported="false" />
         <activity
             android:name=".models.Splash"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".models.Inici_De_Sessio"
             android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

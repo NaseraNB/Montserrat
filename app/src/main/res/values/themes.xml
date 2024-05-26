@@ -6,4 +6,10 @@
     </style>
 
     <style name="Theme.CremalleraDeMontserrat" parent="Base.Theme.CremalleraDeMontserrat" />
+
+    <style name="DialogTheme" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="colorAccent">@color/marro</item>
+    </style>
+
+
 </resources>

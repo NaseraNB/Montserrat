@@ -4,22 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".models.Transport">
+    android:background="@color/white"
+    tools:context=".models.Novetats">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
         <View
             android:id="@+id/blocMarroUn"
             android:layout_width="wrap_content"
             android:layout_height="86dp"
             android:background="#5F574F"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHeight_percent="0.5"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/avis"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="#555555"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/blocMarroUn" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline39"
@@ -40,14 +48,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.07" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline42"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.09" />
+            app:layout_constraintGuide_percent="0.12" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline43"
@@ -69,40 +70,32 @@
             android:layout_height="34dp"
             app:layout_constraintBottom_toTopOf="@+id/guideline41"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.421"
+            app:layout_constraintHorizontal_bias="0.403"
             app:layout_constraintStart_toStartOf="@+id/guideline43"
             app:layout_constraintTop_toTopOf="@+id/guideline40"
-            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/menulogo" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/novetatsTitol"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/transportTitol"
+            android:text="@string/novetatsTitol"
             android:textColor="@color/white"
             android:textSize="26dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/guideline41"
             app:layout_constraintEnd_toStartOf="@+id/guideline43"
-            app:layout_constraintHorizontal_bias="0.021"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline39"
             app:layout_constraintTop_toTopOf="@+id/guideline40"
-            app:layout_constraintVertical_bias="0.363" />
-
-        <View
-            android:id="@+id/avis"
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:background="#555555"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline42" />
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
-            android:id="@+id/transportAvis"
+            android:id="@+id/novetatsAvis"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:drawableLeft="@drawable/avis_prova"
             android:drawablePadding="20dp"
             android:gravity="center_vertical|center_horizontal"
@@ -112,19 +105,17 @@
             android:textColor="@color/white"
             android:textSize="18dp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/avis"
             app:layout_constraintEnd_toStartOf="@+id/guideline44"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline39"
-            app:layout_constraintTop_toTopOf="@+id/guideline42"
-            app:layout_constraintVertical_bias="0.555" />
+            app:layout_constraintTop_toBottomOf="@+id/blocMarroUn" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/novetatsEscolanía"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="@string/transportAeri"
+            android:text="@string/novetatsEscolanía"
             android:textColor="#5F574F"
             android:textSize="23dp"
             android:textStyle="bold"
@@ -142,33 +133,63 @@
             app:layout_constraintEnd_toStartOf="@+id/guideline44"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline39"
-            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+            app:layout_constraintTop_toBottomOf="@+id/novetatsEscolanía" />
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/aeriImatges"
             android:layout_width="347dp"
             android:layout_height="138dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="12dp"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             android:tint="#60000000"
-            app:layout_constraintEnd_toStartOf="@+id/guideline44"
-            app:layout_constraintStart_toStartOf="@+id/guideline39"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/lineUn"
             app:shapeAppearanceOverlay="@style/radiuse"
-            app:srcCompat="@drawable/aerimontserrat" />
+            app:srcCompat="@drawable/imagen_dos" />
+
+        <Button
+            android:id="@+id/botonReservaEscolania"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/boto_vora_blanca"
+            android:text="@string/novetatsReservarActivitat"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/aeriImatges"
+            app:layout_constraintStart_toStartOf="@+id/aeriImatges"
+            app:layout_constraintTop_toTopOf="@+id/aeriImatges"
+            app:layout_constraintVertical_bias="0.822" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/escolaniaData"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="18dp"
-            android:text="@string/transportCremallera"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="25/05/2024"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/aeriImatges"
+            app:layout_constraintEnd_toEndOf="@+id/aeriImatges"
+            app:layout_constraintHorizontal_bias="0.583"
+            app:layout_constraintStart_toEndOf="@+id/botonReservaEscolania"
+            app:layout_constraintTop_toTopOf="@+id/aeriImatges"
+            app:layout_constraintVertical_bias="0.86" />
+
+        <TextView
+            android:id="@+id/novetatsSantuari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/novetatsSantuari"
             android:textColor="#5F574F"
             android:textSize="23dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/guideline44"
-            app:layout_constraintHorizontal_bias="0.003"
+            app:layout_constraintHorizontal_bias="0.009"
             app:layout_constraintStart_toStartOf="@+id/guideline39"
             app:layout_constraintTop_toBottomOf="@+id/aeriImatges" />
 
@@ -176,164 +197,178 @@
             android:id="@+id/lineDos"
             android:layout_width="346dp"
             android:layout_height="3dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="3dp"
             android:background="#5F574F"
             app:layout_constraintEnd_toStartOf="@+id/guideline44"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline39"
-            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+            app:layout_constraintTop_toBottomOf="@+id/novetatsSantuari" />
+
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/imageCremallera"
-            android:layout_width="348dp"
-            android:layout_height="142dp"
-            android:layout_marginTop="10dp"
+            android:id="@+id/novetatsSantuariImatge"
+            android:layout_width="347dp"
+            android:layout_height="138dp"
+            android:layout_marginTop="16dp"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             android:tint="#60000000"
-            app:layout_constraintEnd_toStartOf="@+id/guideline44"
-            app:layout_constraintHorizontal_bias="0.55"
-            app:layout_constraintStart_toStartOf="@+id/guideline39"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/lineDos"
             app:shapeAppearanceOverlay="@style/radiuse"
-            app:srcCompat="@drawable/cremallera" />
+            app:srcCompat="@drawable/santuarimontserrat" />
+
+        <Button
+            android:id="@+id/botonReservaSantuari"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/boto_vora_blanca"
+            android:text="@string/novetatsReservarActivitat"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/novetatsSantuariImatge"
+            app:layout_constraintStart_toStartOf="@+id/novetatsSantuariImatge"
+            app:layout_constraintTop_toTopOf="@+id/novetatsSantuariImatge"
+            app:layout_constraintVertical_bias="0.822" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/escolaniaDataDos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="@string/transportFuniculars"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="25/05/2024"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/novetatsSantuariImatge"
+            app:layout_constraintEnd_toEndOf="@+id/novetatsSantuariImatge"
+            app:layout_constraintHorizontal_bias="0.583"
+            app:layout_constraintStart_toEndOf="@+id/botonReservaSantuari"
+            app:layout_constraintTop_toTopOf="@+id/novetatsSantuariImatge"
+            app:layout_constraintVertical_bias="0.86" />
+
+        <TextView
+            android:id="@+id/amicsMontserrat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/novetatsAmics"
             android:textColor="#5F574F"
             android:textSize="23dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/guideline44"
-            app:layout_constraintHorizontal_bias="0.01"
+            app:layout_constraintHorizontal_bias="0.017"
             app:layout_constraintStart_toStartOf="@+id/guideline39"
-            app:layout_constraintTop_toBottomOf="@+id/imageCremallera" />
+            app:layout_constraintTop_toBottomOf="@+id/novetatsSantuariImatge" />
 
         <View
             android:id="@+id/lineTres"
-            android:layout_width="347dp"
-            android:layout_height="5dp"
-            android:layout_marginTop="8dp"
+            android:layout_width="346dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="3dp"
             android:background="#5F574F"
             app:layout_constraintEnd_toStartOf="@+id/guideline44"
-            app:layout_constraintStart_toStartOf="@+id/guideline39"
-            app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/imageView3"
-            android:layout_width="164dp"
-            android:layout_height="138dp"
-            android:layout_marginTop="8dp"
-            android:adjustViewBounds="true"
-            android:scaleType="centerCrop"
-            android:tint="#30000000"
-            app:layout_constraintEnd_toStartOf="@+id/guideline44"
-            app:layout_constraintHorizontal_bias="0.989"
-            app:layout_constraintStart_toStartOf="@+id/guideline39"
-            app:layout_constraintTop_toBottomOf="@+id/lineTres"
-            app:shapeAppearanceOverlay="@style/radiuse"
-            app:srcCompat="@drawable/santacova" />
-
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/imageView4"
-            android:layout_width="164dp"
-            android:layout_height="138dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="184dp"
-            android:adjustViewBounds="true"
-            android:scaleType="centerCrop"
-            android:tint="#80000000"
-            app:layout_constraintEnd_toStartOf="@+id/guideline44"
-            app:layout_constraintTop_toBottomOf="@+id/lineTres"
-            app:shapeAppearanceOverlay="@style/radiuse"
-            app:srcCompat="@drawable/santjoan" />
-
-        <View
-            android:id="@+id/lineaFinal"
-            android:layout_width="wrap_content"
-            android:layout_height="42dp"
-            android:layout_marginTop="40dp"
-            android:background="#5F574F"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline39"
+            app:layout_constraintTop_toBottomOf="@+id/amicsMontserrat" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/novetatsAmicsImatge"
+            android:layout_width="347dp"
+            android:layout_height="138dp"
+            android:layout_marginTop="16dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:tint="#60000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.454"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/transportBotoInici" />
+            app:layout_constraintTop_toBottomOf="@+id/lineTres"
+            app:shapeAppearanceOverlay="@style/radiuse"
+            app:srcCompat="@drawable/personas" />
+
+        <Button
+            android:id="@+id/botonReservaAmics"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/boto_vora_blanca"
+            android:text="@string/novetatsReservarActivitat"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/novetatsAmicsImatge"
+            app:layout_constraintStart_toStartOf="@+id/novetatsAmicsImatge"
+            app:layout_constraintTop_toTopOf="@+id/novetatsAmicsImatge"
+            app:layout_constraintVertical_bias="0.822" />
 
         <TextView
-            android:id="@+id/transportSant"
+            android:id="@+id/DataTres"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/transportSant"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="25/05/2024"
             android:textColor="@color/white"
-            android:textSize="20dp"
+            android:textSize="17dp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
-            app:layout_constraintEnd_toEndOf="@+id/imageView4"
-            app:layout_constraintHorizontal_bias="0.121"
-            app:layout_constraintStart_toStartOf="@+id/imageView4"
-            app:layout_constraintTop_toTopOf="@+id/imageView4"
-            app:layout_constraintVertical_bias="0.873" />
+            app:layout_constraintBottom_toBottomOf="@+id/novetatsAmicsImatge"
+            app:layout_constraintEnd_toEndOf="@+id/novetatsAmicsImatge"
+            app:layout_constraintHorizontal_bias="0.583"
+            app:layout_constraintStart_toEndOf="@+id/botonReservaAmics"
+            app:layout_constraintTop_toTopOf="@+id/novetatsAmicsImatge"
+            app:layout_constraintVertical_bias="0.86" />
 
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/transportCova"
-            android:textColor="@color/white"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-            app:layout_constraintEnd_toEndOf="@+id/imageView3"
-            app:layout_constraintHorizontal_bias="0.112"
-            app:layout_constraintStart_toStartOf="@+id/imageView3"
-            app:layout_constraintTop_toTopOf="@+id/imageView3"
-            app:layout_constraintVertical_bias="0.882" />
 
         <TextView
             android:id="@+id/transportBotoInici"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginTop="40dp"
             android:text="@string/transportBotoInici"
             android:textColor="#5F574F"
             android:textSize="16dp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/guideline44"
-            app:layout_constraintHorizontal_bias="0.034"
-            app:layout_constraintStart_toStartOf="@+id/guideline39"
-            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+            app:layout_constraintEnd_toStartOf="@+id/textView10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/novetatsAmicsImatge" />
 
         <TextView
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginTop="40dp"
             android:text="@string/transportBotoTransport"
             android:textColor="#5F574F"
             android:textSize="16dp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/guideline44"
-            app:layout_constraintHorizontal_bias="0.791"
-            app:layout_constraintStart_toStartOf="@+id/guideline39"
-            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.69"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/novetatsAmicsImatge" />
 
         <View
             android:id="@+id/liniaTransport"
             android:layout_width="100dp"
             android:layout_height="3dp"
-            android:layout_marginBottom="24dp"
+            android:layout_marginTop="5dp"
             android:background="#5F574F"
-            app:layout_constraintBottom_toTopOf="@+id/lineaFinal"
-            app:layout_constraintEnd_toStartOf="@+id/guideline44"
-            app:layout_constraintHorizontal_bias="0.823"
-            app:layout_constraintStart_toStartOf="@+id/guideline39" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.23"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/transportBotoInici" />
 
+        <View
+            android:id="@+id/lineaFinal"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginTop="24dp"
+            android:background="#5F574F"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/liniaTransport" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </ScrollView>

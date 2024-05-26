@@ -1,10 +1,11 @@
 <resources>
 
     <!-- Nom de l'aplicació -->
-    <string name="app_name">Cremallera de Montserrat</string>
+    <string name="app_name">Montserrat Express</string>
 
     <!-- Splash -->
-    <string name="titolDelSplash">Montserrat Express</string>
+    <string name="splashTitolU">MONTSERRAT</string>
+    <string name="splashTitolDos">EXPRESS</string>
 
     <!-- Login -->
     <string name="loginTituloUn">MONTSERRAT</string>
@@ -58,5 +59,76 @@
     <string name="iniciBotoInici">Inici</string>
     <string name="iniciBotoTransport">Transport</string>
 
+    <!-- Transport -->
+    <string name="transportTitol">TRANSPORT</string>
+    <string name="transportAeri">Aeri de Montserrat</string>
+    <string name="transportCremallera">Cremallera de Montserrat</string>
+    <string name="transportFuniculars">Funiculars</string>
+    <string name="transportSant">Sant Joan</string>
+    <string name="transportCova">Santa Cova</string>
+    <string name="transportBotoInici">Inici</string>
+    <string name="transportBotoTransport">Transport</string>
+
+    <!-- Cremallera -->
+    <string name="cremalleraTitol">CREMALLERA DE MONTSERRAT</string>
+    <string name="cremalleraHorari">Horaris de Cremallera</string>
+    <string name="cremalleraOrigen">Origen</string>
+    <string name="cremalleraDesti">Destí</string>
+    <string name="cremalleraData">Data</string>
+    <string name="cremmalleraMonistrol">Monistrol de Montserrat</string>
+    <string name="cremmalleraMonistrolDos">Monistrol Villa</string>
+    <string name="cremmalleraMontserrat">Montserrat</string>
+    <string name="cremalleraBotoBuscar">Buscar</string>
+    <string name="cremalleraResultat">Resultats de la cerca</string>
+    <string name="cremalleraDataDos">DATA</string>
+    <string name="cremalleraComprar">Compra els bitllets online</string>
+    <string name="cremalleraBillets">Billets del Cremallera</string>
+    <string name="cremalleraAnada">Anada</string>
+    <string name="cremalleraAnadaTornada">Anada i Tornada</string>
+    <string name="cremalleraPreusBitllets">Preus Bitllets Cremallera de montserrat</string>
+    <string name="cremalleraMDMM">Monistrol de Montserrat / Monistrol Vila</string>
+    <string name="cremalleraMM">Monistrol Vila / Montserrat</string>
+    <string name="cremalleraAdult">Adult (14 - 64 anys)</string>
+    <string name="cremalleraInfaltil">Infantil (4 - 13 anys)</string>
+    <string name="cremalleraMenor">Menor (fins a 3 anys)</string>
+    <string name="cremalleraGratis">Gratuït</string>
+    <string name="cremalleraBotoInici">Inici</string>
+    <string name="cremalleraBotoTransport">Transport</string>
+
+
+    <!-- Aeri -->
+    <string name="aeriTitol">AERI DE MONTSERRAT</string>
+    <string name="aeriCalendari">Calendari 2024</string>
+    <string name="aeriGener">GENER</string>
+    <string name="aeriFebrer">FEBRER</string>
+    <string name="aeriMarç">MARÇ</string>
+    <string name="aeriAbril">ABRIL</string>
+    <string name="aeriMaig">MAIG</string>
+    <string name="aeriJuny">JUNY</string>
+    <string name="aeriJuliol">JULIOL</string>
+    <string name="aeriAgost">AGOST</string>
+    <string name="aeriSetembre">SETEMBRE</string>
+    <string name="aeriOctubre">OCTUBRE</string>
+    <string name="aeriNovembre">NOVEMBRE</string>
+    <string name="aeriDesembre">DESEMBRE</string>
+    <string name="aeriTarifes">Tarifes</string>
+    <string name="aeriInfo">Més informació</string>
+    <string name="aeriPreus">Preus Bitllets</string>
+    <string name="aeriAnada">Anada</string>
+    <string name="aeriAnadaTornada">Anada i tornada</string>
+
+    <!-- Funicular -->
+    <string name="funicularTitolJoan">FUNICULAR SANT JOAN</string>
+    <string name="funicularTitolCova">FUNICULAR SANTA COVA</string>
+
+    <!-- Novetats -->
+    <string name="novetatsTitol">NOVETATS</string>
+    <string name="novetatsEscolanía">Escolanía de Montserrat</string>
+    <string name="novetatsReservarActivitat">Reservar Activitat</string>
+    <string name="novetatsSantuari">Santuari de Montserrat</string>
+    <string name="novetatsAmics">Amics de Montserrat</string>
+
+    <!-- Novetats Info-->
+    <string name="novetatsConsulta">Consulta la resta activitats</string>
 
 </resources>

@@ -20,10 +20,10 @@ class Inici : AppCompatActivity() {
     private lateinit var iniciBotoInici: TextView
     private lateinit var iniciBotoTransport: TextView
     private lateinit var liniaInici: View
-    private lateinit var liniaTransport: View
     private lateinit var novetatImatge: ImageView
     private lateinit var novetatTitol: TextView
     private lateinit var novetatData: TextView
+
 
     private val carouselItems = listOf(
         CarouselItem(R.drawable.imagen_uno, "Título 1", "20/05/2024"),
@@ -49,12 +49,10 @@ class Inici : AppCompatActivity() {
         iniciBotoInici = findViewById(R.id.iniciBotoInici)
         iniciBotoTransport = findViewById(R.id.iniciBotoTransport)
         liniaInici = findViewById(R.id.liniaInici)
-        liniaTransport = findViewById(R.id.liniaTransport)
         novetatImatge = findViewById(R.id.novetatImatge)
         novetatTitol = findViewById(R.id.novetatTitol)
         novetatData = findViewById(R.id.novetatData)
 
-        apareixLinia()
 
         iniciImatge.setOnClickListener {
             obrirMenu()
@@ -71,6 +69,10 @@ class Inici : AppCompatActivity() {
 
         // Iniciar el carrusel
         carouselHandler.post(carouselRunnable)
+
+        novetatImatge.setOnClickListener(){
+            obrirNovetats()
+        }
     }
 
     private fun obrirMenu() {
@@ -103,10 +105,12 @@ class Inici : AppCompatActivity() {
         finish()
     }
 
-    private fun apareixLinia() {
-        liniaTransport.visibility = View.INVISIBLE
-        liniaInici.visibility = View.VISIBLE
+    private fun obrirNovetats() {
+        val intent = Intent(this, Novetats::class.java)
+        startActivity(intent)
+        finish()
     }
+
 
     private fun updateCarousel() {
         val item = carouselItems[currentCarouselIndex]

@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".models.Cremallera">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <View
+                android:id="@+id/blocMarroUn"
+                android:layout_width="wrap_content"
+                android:layout_height="86dp"
+                android:background="#5F574F" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.07506053" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.02872777" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.07" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.1" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.78" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.92" />
+
+            <ImageView
+                android:id="@+id/transportMenu"
+                android:layout_width="33dp"
+                android:layout_height="34dp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline41"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.344"
+                app:layout_constraintStart_toStartOf="@+id/guideline43"
+                app:layout_constraintTop_toTopOf="@+id/guideline40"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/menulogo" />
+
+            <TextView
+                android:id="@+id/cremalleraTitol"
+                android:layout_width="229dp"
+                android:layout_height="67dp"
+                android:text="@string/cremalleraTitol"
+                android:textColor="@color/white"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/blocMarroUn"
+                app:layout_constraintEnd_toStartOf="@+id/guideline43"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline39"
+                app:layout_constraintTop_toTopOf="@+id/blocMarroUn"
+                app:layout_constraintVertical_bias="0.842" />
+
+            <View
+                android:id="@+id/cremalleraAvis"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="#555555"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/blocMarroUn" />
+
+            <TextView
+                android:id="@+id/transportAvis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:drawableLeft="@drawable/avis_prova"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingLeft="1dp"
+                android:paddingRight="55dp"
+                android:text="@string/rutesAvis"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/cremalleraAvis"
+                app:layout_constraintEnd_toStartOf="@+id/guideline43"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline39"
+                app:layout_constraintTop_toBottomOf="@+id/blocMarroUn"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/cremalleraHorari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/cremalleraHorari"
+                android:textColor="#5F574F"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/guideline44"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline39"
+                app:layout_constraintTop_toBottomOf="@+id/cremalleraAvis" />
+
+            <View
+                android:id="@+id/lineUn"
+                android:layout_width="365dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="3dp"
+                android:background="#5F574F"
+                app:layout_constraintEnd_toStartOf="@+id/guideline44"
+                app:layout_constraintTop_toBottomOf="@+id/cremalleraHorari" />
+
+            <View
+                android:id="@+id/botoOrigen"
+                android:layout_width="340dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/boto_gris"
+                app:layout_constraintEnd_toStartOf="@+id/guideline44"
+                app:layout_constraintStart_toStartOf="@+id/guideline39"
+                app:layout_constraintTop_toBottomOf="@+id/lineUn" />
+
+            <TextView
+                android:id="@+id/cremalleraOrigen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/cremalleraOrigen"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/marro"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="@+id/botoOrigen"
+                app:layout_constraintEnd_toStartOf="@+id/guideline43"
+                app:layout_constraintHorizontal_bias="0.068"
+                app:layout_constraintStart_toStartOf="@+id/botoOrigen"
+                app:layout_constraintTop_toTopOf="@+id/botoOrigen"
+                app:layout_constraintVertical_bias="0.548" />
+
+            <ImageView
+                android:id="@+id/botoOrigenFlecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/botoOrigen"
+                app:layout_constraintEnd_toEndOf="@+id/botoOrigen"
+                app:layout_constraintHorizontal_bias="0.949"
+                app:layout_constraintStart_toEndOf="@+id/cremalleraOrigen"
+                app:layout_constraintTop_toTopOf="@+id/botoOrigen"
+                app:layout_constraintVertical_bias="0.527"
+                app:srcCompat="@drawable/flecha" />
+
+
+            <View
+                android:id="@+id/botoDesti"
+                android:layout_width="340dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/boto_gris"
+                app:layout_constraintEnd_toStartOf="@+id/guideline44"
+                app:layout_constraintStart_toStartOf="@+id/guideline39"
+                app:layout_constraintTop_toBottomOf="@+id/botoOrigen" />
+
+            <TextView
+                android:id="@+id/cremalleraDesti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/cremalleraDesti"
+                android:textColor="@color/marro"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline43"
+                app:layout_constraintHorizontal_bias="0.128"
+                app:layout_constraintStart_toStartOf="@+id/guideline39"
+                app:layout_constraintTop_toTopOf="@+id/botoDesti" />
+
+            <ImageView
+                android:id="@+id/botoDestiFlecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/botoDesti"
+                app:layout_constraintEnd_toStartOf="@+id/guideline44"
+                app:layout_constraintHorizontal_bias="0.913"
+                app:layout_constraintStart_toEndOf="@+id/cremalleraDesti"
+                app:layout_constraintTop_toTopOf="@+id/botoDesti"
+                app:layout_constraintVertical_bias="0.516"
+                app:srcCompat="@drawable/flecha" />
+
+            <View
+                android:id="@+id/botoData"
+                android:layout_width="340dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/boto_gris"
+                app:layout_constraintEnd_toStartOf="@+id/guideline44"
+                app:layout_constraintStart_toStartOf="@+id/guideline39"
+                app:layout_constraintTop_toBottomOf="@+id/botoDesti" />
+
+            <TextView
+                android:id="@+id/cremalleraData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_calendari"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingLeft="1dp"
+                android:paddingRight="20dp"
+                android:text="@string/cremalleraData"
+                android:textColor="@color/marro"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="@+id/botoData"
+                app:layout_constraintEnd_toStartOf="@+id/guideline43"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toStartOf="@+id/guideline39"
+                app:layout_constraintTop_toTopOf="@+id/botoData"
+                app:layout_constraintVertical_bias="0.527" />
+
+            <Button
+                android:id="@+id/cremalleraBotoBuscar"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:textColor="@color/marro"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:background="@drawable/boto_groc"
+                android:text="@string/cremalleraBotoBuscar"
+                app:layout_constraintEnd_toStartOf="@+id/guideline44"
+                app:layout_constraintStart_toStartOf="@+id/guideline39"
+                app:layout_constraintTop_toBottomOf="@+id/botoData" />
+
+            <TextView
+                android:id="@+id/dataEscollida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/marro"
+                android:textSize="18dp"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="@+id/botoData"
+                app:layout_constraintEnd_toStartOf="@+id/guideline44"
+                app:layout_constraintHorizontal_bias="0.899"
+                app:layout_constraintStart_toEndOf="@+id/cremalleraData"
+                app:layout_constraintTop_toTopOf="@+id/botoData"
+                app:layout_constraintVertical_bias="0.444" />
+
+
+            <View
+                android:id="@+id/resultat"
+                android:layout_width="wrap_content"
+                android:layout_height="455dp"
+                android:layout_marginTop="25dp"
+                android:background="#E1E0DF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cremalleraBotoBuscar" />
+
+            <TextView
+                android:id="@+id/cremalleraResultat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="@string/cremalleraResultat"
+                android:textColor="#5F574F"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline39"
+                app:layout_constraintTop_toTopOf="@+id/resultat" />
+
+            <View
+                android:id="@+id/lineDos"
+                android:layout_width="365dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="1dp"
+                android:background="#5F574F"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline39"
+                app:layout_constraintTop_toBottomOf="@+id/cremalleraResultat" />
+
+            <View
+                android:id="@+id/origen_Desti_Llista"
+                android:layout_width="300dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/boto_marror"
+                app:layout_constraintEnd_toEndOf="@+id/resultat"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="@+id/resultat"
+                app:layout_constraintTop_toBottomOf="@+id/cremalleraDataDos" />
+
+            <TextView
+                android:id="@+id/cremalleraDataDos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/cremalleraDataDos"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.082"
+                app:layout_constraintStart_toStartOf="@+id/resultat"
+                app:layout_constraintTop_toBottomOf="@+id/lineDos" />
+
+            <TextView
+                android:id="@+id/textOrigen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cremalleraOrigen"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/origen_Desti_Llista"
+                app:layout_constraintEnd_toEndOf="@+id/origen_Desti_Llista"
+                app:layout_constraintHorizontal_bias="0.153"
+                app:layout_constraintStart_toStartOf="@+id/origen_Desti_Llista"
+                app:layout_constraintTop_toTopOf="@+id/origen_Desti_Llista"
+                app:layout_constraintVertical_bias="0.548" />
+
+            <TextView
+                android:id="@+id/textDesti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cremalleraDesti"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="@+id/origen_Desti_Llista"
+                app:layout_constraintEnd_toEndOf="@+id/origen_Desti_Llista"
+                app:layout_constraintHorizontal_bias="0.806"
+                app:layout_constraintStart_toStartOf="@+id/origen_Desti_Llista"
+                app:layout_constraintTop_toTopOf="@+id/origen_Desti_Llista"
+                app:layout_constraintVertical_bias="0.548" />
+
+            <View
+                android:id="@+id/viewGris"
+                android:layout_width="152dp"
+                android:layout_height="182dp"
+                android:layout_marginEnd="56dp"
+                android:background="@drawable/gris_horari"
+                app:layout_constraintBottom_toBottomOf="@+id/resultat"
+                app:layout_constraintEnd_toEndOf="@+id/resultat"
+                app:layout_constraintHorizontal_bias="0.955"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/origen_Desti_Llista"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewOrigenDos"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toTopOf="@id/viewGris"
+                app:layout_constraintBottom_toBottomOf="@id/viewGris"
+                app:layout_constraintStart_toStartOf="@id/viewGris"
+                app:layout_constraintEnd_toEndOf="@id/viewGris" />
+
+            <View
+                android:id="@+id/viewBlanc"
+                android:layout_width="154dp"
+                android:layout_height="182dp"
+                android:background="@drawable/blanc_horari"
+                app:layout_constraintBottom_toBottomOf="@+id/resultat"
+                app:layout_constraintEnd_toEndOf="@+id/resultat"
+                app:layout_constraintHorizontal_bias="0.241"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/origen_Desti_Llista"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewOrigen"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toTopOf="@id/viewBlanc"
+                app:layout_constraintBottom_toBottomOf="@id/viewBlanc"
+                app:layout_constraintStart_toStartOf="@id/viewBlanc"
+                app:layout_constraintEnd_toEndOf="@id/viewBlanc" />
+
+
+            <TextView
+                android:id="@+id/d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="@string/cremalleraBillets"
+                android:textColor="#5F574F"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/guideline44"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline39"
+                app:layout_constraintTop_toBottomOf="@+id/resultat" />
+
+            <Button
+                android:id="@+id/cremalleraComprar"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/boto_marror_groc"
+                android:text="@string/cremalleraComprar"
+                android:textAlignment="center"
+                android:textColor="@color/marro"
+                app:layout_constraintBottom_toBottomOf="@+id/resultat"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/resultat"
+                app:layout_constraintTop_toBottomOf="@+id/viewGris" />
+
+            <View
+                android:id="@+id/lineTres"
+                android:layout_width="365dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="3dp"
+                android:background="#5F574F"
+                app:layout_constraintEnd_toStartOf="@+id/guideline44"
+                app:layout_constraintStart_toStartOf="@+id/guideline39"
+                app:layout_constraintTop_toBottomOf="@+id/d" />
+
+            <View
+                android:id="@+id/andaTornada"
+                android:layout_width="365dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/boto_gris"
+                app:layout_constraintEnd_toStartOf="@+id/guideline44"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintStart_toStartOf="@+id/guideline39"
+                app:layout_constraintTop_toBottomOf="@+id/lineTres" />
+
+            <TextView
+                android:id="@+id/titolanadaTornada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/cremalleraAnadaTornada"
+                android:textColor="@color/marro"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="@+id/andaTornada"
+                app:layout_constraintEnd_toEndOf="@+id/andaTornada"
+                app:layout_constraintHorizontal_bias="0.104"
+                app:layout_constraintStart_toStartOf="@+id/andaTornada"
+                app:layout_constraintTop_toTopOf="@+id/andaTornada"
+                app:layout_constraintVertical_bias="0.483" />
+
+            <ImageView
+                android:id="@+id/botoAnadaTornadaFlecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/andaTornada"
+                app:layout_constraintEnd_toEndOf="@+id/andaTornada"
+                app:layout_constraintHorizontal_bias="0.926"
+                app:layout_constraintStart_toEndOf="@+id/titolanadaTornada"
+                app:layout_constraintTop_toBottomOf="@+id/lineTres"
+                app:layout_constraintVertical_bias="0.659"
+                app:srcCompat="@drawable/flecha" />
+
+            <View
+                android:id="@+id/tipusPersonaBlacUn"
+                android:layout_width="127dp"
+                android:layout_height="193dp"
+                android:layout_marginStart="240dp"
+                android:layout_marginTop="72dp"
+                android:background="@drawable/shadows"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.482"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/anadaView" />
+
+            <View
+                android:id="@+id/tipusPersonaBlacDos"
+                android:layout_width="131dp"
+                android:layout_height="193dp"
+                android:layout_marginTop="72dp"
+                android:layout_marginEnd="108dp"
+                android:background="@drawable/shadows"
+                app:layout_constraintEnd_toStartOf="@+id/guideline44"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline39"
+                app:layout_constraintTop_toTopOf="@+id/anadaView" />
+
+            <View
+                android:id="@+id/tipusPersonaGroc"
+                android:layout_width="135dp"
+                android:layout_height="193dp"
+                android:layout_marginTop="72dp"
+                android:layout_marginRight="7dp"
+                android:background="@drawable/boto_groc_dos"
+                app:layout_constraintEnd_toStartOf="@+id/guideline44"
+                app:layout_constraintHorizontal_bias="0.092"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/anadaView" />
+
+            <View
+                android:id="@+id/anadaView"
+                android:layout_width="368dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/boto_marror"
+                app:layout_constraintEnd_toStartOf="@+id/guideline44"
+                app:layout_constraintHorizontal_bias="0.523"
+                app:layout_constraintStart_toStartOf="@+id/guideline39"
+                app:layout_constraintTop_toBottomOf="@+id/andaTornada" />
+
+            <TextView
+                android:id="@+id/cremalleraPreusBitllets"
+                android:layout_width="103dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="20dp"
+                android:text="@string/cremalleraPreusBitllets"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/anadaView"
+                app:layout_constraintStart_toStartOf="@+id/guideline39"
+                app:layout_constraintTop_toTopOf="@+id/anadaView"
+                app:layout_constraintVertical_bias="0.464" />
+
+            <TextView
+                android:id="@+id/cremalleraMDMM"
+                android:layout_width="105dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="12dp"
+                android:text="@string/cremalleraMDMM"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/anadaView"
+                app:layout_constraintStart_toEndOf="@+id/cremalleraPreusBitllets"
+                app:layout_constraintTop_toTopOf="@+id/anadaView"
+                app:layout_constraintVertical_bias="0.433" />
+
+            <TextView
+                android:id="@+id/cremalleraMM"
+                android:layout_width="102dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="8dp"
+                android:text="@string/cremalleraMM"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/anadaView"
+                app:layout_constraintEnd_toStartOf="@+id/guideline44"
+                app:layout_constraintHorizontal_bias="0.368"
+                app:layout_constraintStart_toEndOf="@+id/cremalleraMDMM"
+                app:layout_constraintTop_toTopOf="@+id/anadaView"
+                app:layout_constraintVertical_bias="0.419" />
+
+            <TextView
+                android:id="@+id/cremalleraAdult"
+                android:layout_width="92dp"
+                android:layout_height="38dp"
+                android:text="@string/cremalleraAdult"
+                android:textColor="@color/marro"
+                android:layout_marginTop="20dp"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/tipusPersonaGroc"
+                app:layout_constraintEnd_toEndOf="@+id/tipusPersonaGroc"
+                app:layout_constraintHorizontal_bias="0.414"
+                app:layout_constraintStart_toStartOf="@+id/tipusPersonaGroc"
+                app:layout_constraintTop_toTopOf="@+id/tipusPersonaGroc"
+                app:layout_constraintVertical_bias="0.109" />
+
+            <TextView
+                android:id="@+id/cremalleraInfaltil"
+                android:layout_width="92dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/cremalleraInfaltil"
+                android:textColor="@color/marro"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/tipusPersonaGroc"
+                app:layout_constraintEnd_toEndOf="@+id/tipusPersonaGroc"
+                app:layout_constraintHorizontal_bias="0.414"
+                app:layout_constraintStart_toStartOf="@+id/tipusPersonaGroc"
+                app:layout_constraintTop_toBottomOf="@+id/cremalleraAdult"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/cremalleraMenor"
+                android:layout_width="92dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/cremalleraMenor"
+                android:textColor="@color/marro"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/tipusPersonaGroc"
+                app:layout_constraintEnd_toEndOf="@+id/tipusPersonaGroc"
+                app:layout_constraintHorizontal_bias="0.414"
+                app:layout_constraintStart_toStartOf="@+id/tipusPersonaGroc"
+                app:layout_constraintTop_toBottomOf="@+id/cremalleraInfaltil"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+            <TextView
+                android:id="@+id/preuCremalleraUn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="21,00€"
+                android:textAlignment="center"
+                android:textColor="@color/marro"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/tipusPersonaBlacDos"
+                app:layout_constraintHorizontal_bias="0.573"
+                app:layout_constraintStart_toStartOf="@+id/tipusPersonaBlacDos"
+                app:layout_constraintTop_toTopOf="@+id/tipusPersonaBlacDos" />
+
+            <TextView
+                android:id="@+id/preuCremalleraDos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="21,00€"
+                android:textAlignment="center"
+                android:textColor="@color/marro"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/tipusPersonaBlacDos"
+                app:layout_constraintHorizontal_bias="0.573"
+                app:layout_constraintStart_toStartOf="@+id/tipusPersonaBlacDos"
+                app:layout_constraintTop_toBottomOf="@+id/preuCremalleraUn" />
+
+
+            <TextView
+                android:id="@+id/preuCremalleraTres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/cremalleraGratis"
+                android:textAlignment="center"
+                android:textColor="@color/marro"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/tipusPersonaBlacDos"
+                app:layout_constraintHorizontal_bias="0.578"
+                app:layout_constraintStart_toStartOf="@+id/tipusPersonaBlacDos"
+                app:layout_constraintTop_toBottomOf="@+id/preuCremalleraDos" />
+
+            <TextView
+                android:id="@+id/preuCremalleraCuatro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="21,00€"
+                android:textAlignment="center"
+                android:textColor="@color/marro"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/tipusPersonaBlacUn"
+                app:layout_constraintHorizontal_bias="0.571"
+                app:layout_constraintStart_toStartOf="@+id/tipusPersonaBlacUn"
+                app:layout_constraintTop_toTopOf="@+id/tipusPersonaBlacUn" />
+
+            <TextView
+                android:id="@+id/preuCremalleraCinco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="21,00€"
+                android:textAlignment="center"
+                android:textColor="@color/marro"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/tipusPersonaBlacUn"
+                app:layout_constraintHorizontal_bias="0.571"
+                app:layout_constraintStart_toStartOf="@+id/tipusPersonaBlacUn"
+                app:layout_constraintTop_toBottomOf="@+id/preuCremalleraCuatro" />
+
+            <TextView
+                android:id="@+id/preuCremalleraSeis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/cremalleraGratis"
+                android:textAlignment="center"
+                android:textColor="@color/marro"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/tipusPersonaBlacUn"
+                app:layout_constraintHorizontal_bias="0.564"
+                app:layout_constraintStart_toStartOf="@+id/tipusPersonaBlacUn"
+                app:layout_constraintTop_toBottomOf="@+id/preuCremalleraCinco" />
+
+
+            <TextView
+                android:id="@+id/cremalleraTransport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/transportBotoTransport"
+                android:textColor="#5F574F"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/guideline44"
+                app:layout_constraintHorizontal_bias="0.791"
+                app:layout_constraintStart_toEndOf="@+id/cremalleraTransportInici"
+                app:layout_constraintTop_toBottomOf="@+id/tipusPersonaBlacUn" />
+
+            <TextView
+                android:id="@+id/cremalleraTransportInici"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/transportBotoInici"
+                android:textColor="#5F574F"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.242"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tipusPersonaGroc" />
+
+            <View
+                android:id="@+id/liniaTransportCremallera"
+                android:layout_width="100dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="16dp"
+                android:background="#5F574F"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.829"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cremalleraTransport" />
+
+            <View
+                android:id="@+id/lineaFinal"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginTop="24dp"
+                android:background="#5F574F"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/liniaTransportCremallera" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

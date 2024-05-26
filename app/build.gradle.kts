@@ -8,6 +8,10 @@ android {
     namespace = "com.example.cremallerademontserrat"
     compileSdk = 34
 
+    buildFeatures{
+        viewBinding=true
+    }
+
     defaultConfig {
         applicationId = "com.example.cremallerademontserrat"
         minSdk = 24
@@ -56,6 +60,16 @@ dependencies {
 
     implementation("androidx.viewpager2:viewpager2:1.0.0")
     implementation("androidx.recyclerview:recyclerview:1.2.1")
+
+    // Calendario
+    implementation("androidx.constraintlayout:constraintlayout:2.1.3")
+    implementation("androidx.appcompat:appcompat:1.4.1")
+    implementation("com.google.android.material:material:1.5.0")
+
+    implementation("com.google.android.material:material:1.5.0")
+
+    // Splash
+    implementation("com.github.bumptech.glide:glide:4.16.0")
 
 
 }

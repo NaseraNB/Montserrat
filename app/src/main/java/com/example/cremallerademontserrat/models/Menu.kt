@@ -15,6 +15,7 @@ class Menu : AppCompatActivity() {
     private lateinit var menuFlecha: ImageView
     private lateinit var menuRutes: TextView
     private lateinit var menuInici: TextView
+    private lateinit var menuTransport: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,6 +25,7 @@ class Menu : AppCompatActivity() {
         menuFlecha = findViewById(R.id.menuFlecha)
         menuRutes = findViewById(R.id.menuRutes)
         menuInici = findViewById(R.id.menuInici)
+        menuTransport = findViewById(R.id.menuTransport)
 
         menuTanca.setOnClickListener {
             obrirTancar()
@@ -41,6 +43,12 @@ class Menu : AppCompatActivity() {
             obrirInici()
         }
 
+        menuTransport.setOnClickListener(){
+            obrirTransport()
+        }
+
+
+
     }
 
     private fun obrirTancar() {
@@ -57,6 +65,12 @@ class Menu : AppCompatActivity() {
 
     private fun obrirInici() {
         val intent = Intent(this, Inici::class.java) // Crea un Intent per canviar a la pantalla.
+        startActivity(intent) // Inicia la nova activitat
+        finish()  // Tanca aquesta activitat.
+    }
+
+    private fun obrirTransport() {
+        val intent = Intent(this, Transport::class.java) // Crea un Intent per canviar a la pantalla.
         startActivity(intent) // Inicia la nova activitat
         finish()  // Tanca aquesta activitat.
     }

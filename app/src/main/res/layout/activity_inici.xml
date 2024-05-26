@@ -13,7 +13,7 @@
 
         <View
             android:id="@+id/blueBackground"
-            android:layout_width="435dp"
+            android:layout_width="wrap_content"
             android:layout_height="83dp"
             android:background="#5F574F"
             app:layout_constraintEnd_toEndOf="parent"
@@ -355,9 +355,10 @@
 
         <View
             android:id="@+id/lineaFinal"
-            android:layout_width="435dp"
+            android:layout_width="wrap_content"
             android:layout_height="45dp"
             android:background="#5F574F"
+
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -396,24 +397,15 @@
 
         <View
             android:id="@+id/liniaInici"
-            android:layout_width="85dp"
+            android:layout_width="100dp"
             android:layout_height="3dp"
+            android:layout_marginStart="80dp"
             android:layout_marginBottom="24dp"
             android:background="#5F574F"
             app:layout_constraintBottom_toTopOf="@+id/lineaFinal"
-            app:layout_constraintEnd_toStartOf="@+id/liniaTransport"
-            app:layout_constraintHorizontal_bias="0.597"
+            app:layout_constraintEnd_toStartOf="@+id/guideline26"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent" />
-
-        <View
-            android:id="@+id/liniaTransport"
-            android:layout_width="85dp"
-            android:layout_height="3dp"
-            android:layout_marginEnd="92dp"
-            android:layout_marginBottom="24dp"
-            android:background="#5F574F"
-            app:layout_constraintBottom_toTopOf="@+id/lineaFinal"
-            app:layout_constraintEnd_toEndOf="parent" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline33"
