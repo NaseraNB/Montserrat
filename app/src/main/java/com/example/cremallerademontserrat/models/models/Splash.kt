@@ -1,5 +1,5 @@
 // Paquet
-package com.example.cremallerademontserrat.models
+package com.example.cremallerademontserrat.models.models
 
 // Importacions
 import androidx.appcompat.app.AppCompatActivity
@@ -7,7 +7,6 @@ import android.os.Bundle
 import com.example.cremallerademontserrat.R
 import android.content.Intent
 import android.os.Handler
-import android.view.WindowManager
 
 // Classe principal
 class Splash : AppCompatActivity() {

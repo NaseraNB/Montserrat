@@ -2,11 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/tren"
-        android:title="TREN"/>
+        android:title="@string/menuTren"/>
     <item
         android:id="@+id/aeri"
-        android:title="AERI"/>
+        android:title="@string/menuAeri"/>
     <item
-        android:id="@+id/funicular"
-        android:title="FUNICULAR"/>
+        android:id="@+id/funicularSantJoan"
+        android:title="@string/menuFunicularSantJoan"/>
+    <item
+        android:id="@+id/funicularSantaCova"
+        android:title="@string/menuFunicularSantaCova"/>
 </menu>

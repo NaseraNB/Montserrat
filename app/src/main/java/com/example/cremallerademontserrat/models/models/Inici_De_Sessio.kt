@@ -1,9 +1,8 @@
-package com.example.cremallerademontserrat.models
+package com.example.cremallerademontserrat.models.models
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
 import android.widget.ImageView
 import android.widget.TextView
 import com.example.cremallerademontserrat.R
@@ -29,9 +28,8 @@ class Inici_De_Sessio : AppCompatActivity() {
     }
 
     private fun obrirMenu(){
-        val intent = Intent(this, Menu::class.java) // Crea un Intent per canviar a la pantalla.
-        startActivity(intent) // Inicia la nova activitat
-        finish()  // Tanca aquesta activitat.
+        val dialog = Menu()
+        dialog.show(supportFragmentManager, "DialogoMenu")
     }
 
     private fun anarAlRegistre() {

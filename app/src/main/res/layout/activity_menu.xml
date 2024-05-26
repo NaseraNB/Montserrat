@@ -4,19 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".models.Menu">
-
-    <!-- Vista izquierda -->
-    <View
-        android:id="@+id/leftView"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:background="#FFFFFF"
-        app:layout_constraintEnd_toStartOf="@+id/rightView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <!-- Vista derecha -->
+    android:background="#00FFFFFF"
+    tools:context=".models.models.Menu">
 
     <View
         android:id="@+id/rightView"
@@ -24,68 +13,43 @@
         android:layout_height="match_parent"
         android:background="#5F574F"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/leftView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/menuImatge"
         android:layout_width="128dp"
         android:layout_height="113dp"
         android:layout_marginTop="36dp"
+        android:layout_marginEnd="68dp"
         android:src="@drawable/imguser"
         app:civ_border_color="#ffffff"
         app:civ_border_width="5dp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline22"
-        app:layout_constraintHorizontal_bias="0.516"
-        app:layout_constraintStart_toStartOf="@+id/guideline23"
-        app:layout_constraintTop_toTopOf="@+id/guideline24" />
-
-    <androidx.constraintlayout.widget.Barrier
-        android:id="@+id/barrier"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:barrierDirection="left"
-        app:constraint_referenced_ids="rightView" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.96" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline23"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.39" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline24"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.02872777" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.984"
+        app:layout_constraintStart_toStartOf="@+id/rightView"
+        app:layout_constraintTop_toTopOf="@+id/rightView" />
 
     <TextView
         android:id="@+id/menuNom"
         android:layout_width="133dp"
         android:layout_height="25dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="28dp"
         android:text="@string/menuNom"
         android:textColor="@color/white"
         android:textSize="20dp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline22"
-        app:layout_constraintHorizontal_bias="0.535"
-        app:layout_constraintStart_toStartOf="@+id/guideline23"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/rightView"
         app:layout_constraintTop_toBottomOf="@+id/menuImatge" />
 
     <TextView
         android:id="@+id/menuInici"
         android:layout_width="140dp"
         android:layout_height="25dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="28dp"
         android:drawableLeft="@drawable/home"
         android:drawablePadding="10dp"
         android:gravity="center_vertical|center_horizontal"
@@ -95,35 +59,35 @@
         android:textColor="#ffffff"
         android:textSize="18dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/guideline22"
-        app:layout_constraintHorizontal_bias="0.025"
-        app:layout_constraintStart_toStartOf="@+id/guideline23"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="@+id/rightView"
         app:layout_constraintTop_toBottomOf="@+id/menuNom" />
 
     <TextView
         android:id="@+id/menuTransport"
         android:layout_width="210dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="28dp"
         android:drawableLeft="@drawable/transport"
         android:drawablePadding="10dp"
         android:gravity="center_vertical|center_horizontal"
         android:paddingLeft="10dp"
-        android:paddingRight="55dp"
+        android:paddingRight="62dp"
         android:text="@string/menuTransport"
         android:textColor="@color/white"
         android:textSize="18dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/guideline22"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline23"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="@+id/rightView"
         app:layout_constraintTop_toBottomOf="@+id/menuInici" />
 
     <TextView
         android:id="@+id/menuRutes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="28dp"
         android:drawableLeft="@drawable/location"
         android:drawablePadding="10dp"
         android:gravity="center_vertical|center_horizontal"
@@ -133,16 +97,16 @@
         android:textColor="@color/white"
         android:textSize="18dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/guideline22"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline23"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toStartOf="@+id/rightView"
         app:layout_constraintTop_toBottomOf="@+id/menuTransport" />
 
     <TextView
         android:id="@+id/menuNosaltres"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="28dp"
         android:drawableLeft="@drawable/nosaltres"
         android:drawablePadding="10dp"
         android:gravity="center_vertical|center_horizontal"
@@ -152,16 +116,16 @@
         android:textColor="@color/white"
         android:textSize="18dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/guideline22"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline23"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.312"
+        app:layout_constraintStart_toStartOf="@+id/rightView"
         app:layout_constraintTop_toBottomOf="@+id/menuRutes" />
 
     <TextView
         android:id="@+id/menuIdioma"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="28dp"
         android:drawableLeft="@drawable/idioma"
         android:drawablePadding="10dp"
         android:gravity="center_vertical|center_horizontal"
@@ -171,16 +135,17 @@
         android:textColor="@color/white"
         android:textSize="18dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/guideline22"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline23"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="@+id/rightView"
         app:layout_constraintTop_toBottomOf="@+id/menuNosaltres" />
 
     <TextView
         android:id="@+id/menuTancarSessio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
         android:drawableLeft="@drawable/tancar"
         android:drawablePadding="10dp"
         android:gravity="center_vertical|center_horizontal"
@@ -190,19 +155,19 @@
         android:textColor="@color/white"
         android:textSize="18dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/guideline22"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline23"
-        app:layout_constraintTop_toBottomOf="@+id/menuIdioma" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuIdioma"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/menuFlecha"
         android:layout_width="23dp"
         android:layout_height="24dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline22"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.777"
-        app:layout_constraintStart_toStartOf="@+id/guideline23"
+        app:layout_constraintStart_toStartOf="@+id/menuTransport"
         app:layout_constraintTop_toBottomOf="@+id/menuInici"
         app:srcCompat="@drawable/baseline_keyboard_arrow_down_24" />
 

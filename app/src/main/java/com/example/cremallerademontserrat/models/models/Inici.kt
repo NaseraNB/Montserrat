@@ -1,4 +1,4 @@
-package com.example.cremallerademontserrat.models
+package com.example.cremallerademontserrat.models.models
 
 import android.content.Intent
 import android.graphics.Color
@@ -76,9 +76,8 @@ class Inici : AppCompatActivity() {
     }
 
     private fun obrirMenu() {
-        val intent = Intent(this, Menu::class.java)
-        startActivity(intent)
-        finish()
+        val dialog = Menu()
+        dialog.show(supportFragmentManager, "DialogoMenu")
     }
 
     private fun botoInici() {

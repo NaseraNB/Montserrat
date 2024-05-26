@@ -1,4 +1,4 @@
-package com.example.cremallerademontserrat.models
+package com.example.cremallerademontserrat.models.models
 
 import android.app.DatePickerDialog
 import android.os.Bundle
@@ -11,7 +11,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.cremallerademontserrat.R
-import com.example.cremallerademontserrat.adapters.Lista
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale

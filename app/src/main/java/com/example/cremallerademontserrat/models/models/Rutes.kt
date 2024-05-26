@@ -1,4 +1,4 @@
-package com.example.cremallerademontserrat.models
+package com.example.cremallerademontserrat.models.models
 
 import android.content.Intent
 import android.graphics.Color

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#5F574F"
-    tools:context=".models.Registre">
+    tools:context=".models.models.Registre">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline14"

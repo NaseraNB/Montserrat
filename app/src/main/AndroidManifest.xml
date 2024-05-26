@@ -17,50 +17,55 @@
         android:theme="@style/Theme.CremalleraDeMontserrat"
         tools:targetApi="31">
         <activity
-            android:name=".models.NovetatsInfo"
+            android:name=".models.models.Menu"
             android:exported="false" />
         <activity
-            android:name=".models.Novetats"
+            android:name=".models.models.NovetatsInfo"
             android:exported="false" />
         <activity
-            android:name=".models.FunicularSantaCova"
+            android:name=".models.models.Novetats"
             android:exported="false" />
         <activity
-            android:name=".models.FunicularSantJoan"
+            android:name=".models.models.FunicularSantaCova"
             android:exported="false" />
         <activity
-            android:name=".models.Aeri"
+            android:name=".models.models.FunicularSantJoan"
             android:exported="false" />
         <activity
-            android:name=".models.Cremallera"
+            android:name=".models.models.Aeri"
             android:exported="false" />
         <activity
-            android:name=".models.Transport"
+            android:name=".models.models.Cremallera"
             android:exported="false" />
         <activity
-            android:name=".models.Inici"
+            android:name=".models.models.Transport"
             android:exported="false" />
         <activity
-            android:name=".models.Rutes"
+            android:name=".models.models.Inici"
             android:exported="false" />
         <activity
-            android:name=".models.Menu"
+            android:name=".models.models.Rutes"
             android:exported="false" />
         <activity
-            android:name=".models.Registre"
+            android:name=".models.models.Menu"
             android:exported="false" />
         <activity
-            android:name=".models.Splash"
+            android:name=".models.models.Registre"
+            android:exported="false" />
+        <activity
+            android:name=".models.models.Splash"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".models.Inici_De_Sessio"
+            android:name=".models.models.Inici_De_Sessio"
             android:exported="false" />
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

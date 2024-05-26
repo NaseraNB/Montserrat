@@ -32,7 +32,8 @@
     <string name="menuTransport">TRANSPORT</string>
     <string name="menuTren">TREN</string>
     <string name="menuAeri">AERI</string>
-    <string name="menuFunicular">FUNICULAR</string>
+    <string name="menuFunicularSantJoan">FUNICULAR SANT JOAN</string>
+    <string name="menuFunicularSantaCova">FUNICULAR SANTA COVA</string>
     <string name="menuRutes">RUTES</string>
     <string name="menuNosaltres">NOSALTRES</string>
     <string name="menuIdioma">IDIOMA</string>
@@ -130,5 +131,7 @@
 
     <!-- Novetats Info-->
     <string name="novetatsConsulta">Consulta la resta activitats</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

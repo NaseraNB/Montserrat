@@ -1,4 +1,4 @@
-package com.example.cremallerademontserrat.adapters
+package com.example.cremallerademontserrat.models.models
 
 import android.content.Context
 import android.view.LayoutInflater
