@@ -10,8 +10,9 @@ import android.widget.PopupMenu
 import android.widget.TextView
 import androidx.fragment.app.DialogFragment
 import com.example.cremallerademontserrat.R
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.*
 
-// Classe del Menu
 class Menu : DialogFragment() {
 
     // Variables
@@ -20,6 +21,9 @@ class Menu : DialogFragment() {
     private lateinit var menuRutes: TextView
     private lateinit var menuInici: TextView
     private lateinit var menuTransport: TextView
+    private lateinit var menuNom: TextView // El TextView para el nombre del usuario
+    private lateinit var database: DatabaseReference
+    private lateinit var auth: FirebaseAuth
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // Mostra l'activitat del menú
@@ -30,12 +34,20 @@ class Menu : DialogFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        // Inicializar Firebase Auth y Database
+        auth = FirebaseAuth.getInstance()
+        database = FirebaseDatabase.getInstance("https://montserrat-express-default-rtdb.europe-west1.firebasedatabase.app/").getReference("USUARIS")
+
         // Buscar les ID dels components.
         menuTanca = view.findViewById(R.id.menuTancarSessio)
         menuFlecha = view.findViewById(R.id.menuFlecha)
         menuRutes = view.findViewById(R.id.menuRutes)
         menuInici = view.findViewById(R.id.menuInici)
         menuTransport = view.findViewById(R.id.menuTransport)
+        menuNom = view.findViewById(R.id.menuNom) // El TextView para el nombre del usuario
+
+        // Obtener el nombre del usuario actual
+        obtenerNombreUsuario()
 
         // Clic de cada component.
         menuInici.setOnClickListener {
@@ -59,6 +71,27 @@ class Menu : DialogFragment() {
         }
     }
 
+    // Obtener el nombre del usuario desde Firebase Realtime Database
+    private fun obtenerNombreUsuario() {
+        val user = auth.currentUser
+        val uid = user?.uid
+
+        if (uid != null) {
+            database.child(uid).addListenerForSingleValueEvent(object : ValueEventListener {
+                override fun onDataChange(dataSnapshot: DataSnapshot) {
+                    val nombre = dataSnapshot.child("nom").getValue(String::class.java)
+                    menuNom.text = nombre ?: ""
+                }
+
+                override fun onCancelled(databaseError: DatabaseError) {
+                    menuNom.text = ""
+                }
+            })
+        } else {
+            menuNom.text = ""
+        }
+    }
+
     // Mostrar el menú cap a la dreta
     override fun onResume() {
         super.onResume()
@@ -68,7 +101,6 @@ class Menu : DialogFragment() {
         dialog?.window?.setLayout(width, ViewGroup.LayoutParams.MATCH_PARENT)
         dialog?.window?.setGravity(Gravity.TOP or Gravity.END)
     }
-
 
     // Mètodes que obre una activitat
     private fun obrirInici() {
@@ -90,7 +122,8 @@ class Menu : DialogFragment() {
     }
 
     private fun obrirTacarSessio() {
-        val intent = Intent(requireContext(), Inici_De_Sessio::class.java)
+        auth.signOut() // Cerrar sesión
+        val intent = Intent(requireContext(), Inici_De_Sessio::class.java) // Redirigir a la pantalla de inicio de sesión
         startActivity(intent)
         dismiss()
     }

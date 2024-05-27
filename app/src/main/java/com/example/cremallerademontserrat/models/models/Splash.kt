@@ -8,7 +8,7 @@ import com.example.cremallerademontserrat.R
 import android.content.Intent
 import android.os.Handler
 
-// Classe principal
+// Classe
 class Splash : AppCompatActivity() {
 
     // Variables
@@ -27,7 +27,7 @@ class Splash : AppCompatActivity() {
         Handler().postDelayed({
 
             // Crea un Intent per canviar a la pantalla.
-            val intent = Intent(this, Inici_De_Sessio::class.java)
+            val intent = Intent(this, Inici::class.java)
 
             // Inicia la nova activitat
             startActivity(intent)

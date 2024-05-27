@@ -21,6 +21,7 @@
     <string name="registreTitulUn">CREA EL TEU</string>
     <string name="registreTitulDos">USUARI</string>
     <string name="registreNom">NOM</string>
+    <string name="registreEdat">EDAT</string>
     <string name="registreCorreu">CORREU</string>
     <string name="registreContraseña">CONTRASENYA</string>
     <string name="registreBoto">CREAR</string>
