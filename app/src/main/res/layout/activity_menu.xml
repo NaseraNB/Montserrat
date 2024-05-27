@@ -24,7 +24,7 @@
         android:layout_height="113dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="68dp"
-        android:src="@drawable/imguser"
+        android:src="@drawable/imatgedelsplash"
         app:civ_border_color="#ffffff"
         app:civ_border_width="5dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,7 +36,7 @@
         android:id="@+id/menuNom"
         android:layout_width="133dp"
         android:layout_height="25dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="20dp"
         android:text="@string/menuNom"
         android:textAlignment="center"
         android:textColor="@color/white"
@@ -67,8 +67,8 @@
 
     <TextView
         android:id="@+id/menuTransport"
-        android:layout_width="210dp"
-        android:layout_height="wrap_content"
+        android:layout_width="223dp"
+        android:layout_height="21dp"
         android:layout_marginTop="28dp"
         android:drawableLeft="@drawable/transport"
         android:drawablePadding="10dp"
@@ -80,7 +80,7 @@
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="@+id/rightView"
         app:layout_constraintTop_toBottomOf="@+id/menuInici" />
 
