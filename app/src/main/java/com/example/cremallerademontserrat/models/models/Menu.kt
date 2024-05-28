@@ -12,6 +12,7 @@ import androidx.fragment.app.DialogFragment
 import com.example.cremallerademontserrat.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
+import com.google.firebase.database.DatabaseError
 
 class Menu : DialogFragment() {
 

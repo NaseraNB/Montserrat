@@ -21,58 +21,16 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline39"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.07569343" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline40"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.02872777" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline41"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.07" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline42"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.09" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline43"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.78" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline44"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.92" />
-
         <ImageView
             android:id="@+id/transportMenu"
             android:layout_width="33dp"
             android:layout_height="34dp"
-            app:layout_constraintBottom_toTopOf="@+id/guideline41"
+            app:layout_constraintBottom_toBottomOf="@+id/blocMarroUn"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.421"
-            app:layout_constraintStart_toStartOf="@+id/guideline43"
-            app:layout_constraintTop_toTopOf="@+id/guideline40"
-            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.821"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.596"
             app:srcCompat="@drawable/menulogo" />
 
         <TextView
@@ -83,12 +41,12 @@
             android:textColor="@color/white"
             android:textSize="26dp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/guideline41"
-            app:layout_constraintEnd_toStartOf="@+id/guideline43"
-            app:layout_constraintHorizontal_bias="0.021"
-            app:layout_constraintStart_toStartOf="@+id/guideline39"
-            app:layout_constraintTop_toTopOf="@+id/guideline40"
-            app:layout_constraintVertical_bias="0.363" />
+            app:layout_constraintBottom_toBottomOf="@+id/blocMarroUn"
+            app:layout_constraintEnd_toEndOf="@+id/blocMarroUn"
+            app:layout_constraintHorizontal_bias="0.115"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.577" />
 
         <View
             android:id="@+id/avis"
@@ -96,8 +54,9 @@
             android:layout_height="60dp"
             android:background="#555555"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline42" />
+            app:layout_constraintTop_toBottomOf="@+id/blocMarroUn" />
 
         <TextView
             android:id="@+id/transportAvis"
@@ -113,11 +72,11 @@
             android:textSize="18dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/avis"
-            app:layout_constraintEnd_toStartOf="@+id/guideline44"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline39"
-            app:layout_constraintTop_toTopOf="@+id/guideline42"
-            app:layout_constraintVertical_bias="0.555" />
+            app:layout_constraintEnd_toEndOf="@+id/avis"
+            app:layout_constraintHorizontal_bias="0.076"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/blocMarroUn"
+            app:layout_constraintVertical_bias="0.361" />
 
         <TextView
             android:id="@+id/textView3"
@@ -128,20 +87,19 @@
             android:textColor="#5F574F"
             android:textSize="23dp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/guideline44"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline39"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.16"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/avis" />
 
         <View
             android:id="@+id/lineUn"
-            android:layout_width="346dp"
+            android:layout_width="347dp"
             android:layout_height="3dp"
             android:layout_marginTop="3dp"
             android:background="#5F574F"
-            app:layout_constraintEnd_toStartOf="@+id/guideline44"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline39"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
         <com.google.android.material.imageview.ShapeableImageView
@@ -152,8 +110,8 @@
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             android:tint="#60000000"
-            app:layout_constraintEnd_toStartOf="@+id/guideline44"
-            app:layout_constraintStart_toStartOf="@+id/guideline39"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/lineUn"
             app:shapeAppearanceOverlay="@style/radiuse"
             app:srcCompat="@drawable/aerimontserrat" />
@@ -162,25 +120,24 @@
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="18dp"
+            android:layout_marginTop="16dp"
             android:text="@string/transportCremallera"
             android:textColor="#5F574F"
             android:textSize="23dp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/guideline44"
-            app:layout_constraintHorizontal_bias="0.003"
-            app:layout_constraintStart_toStartOf="@+id/guideline39"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.234"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/aeriImatges" />
 
         <View
             android:id="@+id/lineDos"
-            android:layout_width="346dp"
+            android:layout_width="347dp"
             android:layout_height="3dp"
             android:layout_marginTop="8dp"
             android:background="#5F574F"
-            app:layout_constraintEnd_toStartOf="@+id/guideline44"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline39"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
         <com.google.android.material.imageview.ShapeableImageView
@@ -191,9 +148,9 @@
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             android:tint="#60000000"
-            app:layout_constraintEnd_toStartOf="@+id/guideline44"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.55"
-            app:layout_constraintStart_toStartOf="@+id/guideline39"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/lineDos"
             app:shapeAppearanceOverlay="@style/radiuse"
             app:srcCompat="@drawable/cremallera" />
@@ -202,37 +159,38 @@
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="16dp"
             android:text="@string/transportFuniculars"
             android:textColor="#5F574F"
             android:textSize="23dp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/guideline44"
-            app:layout_constraintHorizontal_bias="0.01"
-            app:layout_constraintStart_toStartOf="@+id/guideline39"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.115"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageCremallera" />
 
         <View
             android:id="@+id/lineTres"
             android:layout_width="347dp"
-            android:layout_height="5dp"
-            android:layout_marginTop="8dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="3dp"
             android:background="#5F574F"
-            app:layout_constraintEnd_toStartOf="@+id/guideline44"
-            app:layout_constraintStart_toStartOf="@+id/guideline39"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/imageView3"
             android:layout_width="164dp"
             android:layout_height="138dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="32dp"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             android:tint="#30000000"
-            app:layout_constraintEnd_toStartOf="@+id/guideline44"
-            app:layout_constraintHorizontal_bias="0.989"
-            app:layout_constraintStart_toStartOf="@+id/guideline39"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.842"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
             app:layout_constraintTop_toBottomOf="@+id/lineTres"
             app:shapeAppearanceOverlay="@style/radiuse"
             app:srcCompat="@drawable/santacova" />
@@ -241,12 +199,15 @@
             android:id="@+id/imageView4"
             android:layout_width="164dp"
             android:layout_height="138dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="12dp"
             android:layout_marginEnd="184dp"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             android:tint="#80000000"
             app:layout_constraintEnd_toStartOf="@+id/guideline44"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/lineTres"
             app:shapeAppearanceOverlay="@style/radiuse"
             app:srcCompat="@drawable/santjoan" />
@@ -296,16 +257,13 @@
             android:id="@+id/transportBotoInici"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="60dp"
+            android:layout_marginStart="108dp"
             android:layout_marginTop="20dp"
-            android:layout_marginBottom="10dp"
             android:text="@string/transportBotoInici"
             android:textColor="#5F574F"
             android:textSize="16dp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/guideline44"
-            app:layout_constraintHorizontal_bias="0.034"
-            app:layout_constraintStart_toStartOf="@+id/guideline39"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
         <TextView
@@ -313,14 +271,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:layout_marginBottom="10dp"
             android:text="@string/transportBotoTransport"
             android:textColor="#5F574F"
             android:textSize="16dp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/guideline44"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.791"
-            app:layout_constraintStart_toStartOf="@+id/guideline39"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
         <View
@@ -330,9 +287,9 @@
             android:layout_marginBottom="24dp"
             android:background="#5F574F"
             app:layout_constraintBottom_toTopOf="@+id/lineaFinal"
-            app:layout_constraintEnd_toStartOf="@+id/guideline44"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.823"
-            app:layout_constraintStart_toStartOf="@+id/guideline39" />
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

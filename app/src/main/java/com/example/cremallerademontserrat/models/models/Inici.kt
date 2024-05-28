@@ -12,6 +12,15 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.cremallerademontserrat.R
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
+import org.json.JSONObject
+import java.net.URL
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 import kotlin.random.Random
 
 // Classe
@@ -29,6 +38,10 @@ class Inici : AppCompatActivity() {
     private lateinit var novetatData: TextView
     private lateinit var iniciReserveDescripcio: TextView
     private lateinit var reservaView: View
+    private lateinit var iniciTipus: TextView
+    private lateinit var iniciIcon: ImageView
+    private lateinit var iniciTemp: TextView
+    private lateinit var iniciAvui: TextView
 
 
     // Llista de carrusel
@@ -65,6 +78,12 @@ class Inici : AppCompatActivity() {
         iniciReserveDescripcio = findViewById(R.id.iniciReserveDescripcio)
         reservaView = findViewById(R.id.constraintLayout2)
 
+        iniciTipus = findViewById(R.id.iniciTipus)
+        iniciIcon = findViewById(R.id.iniciIcon)
+        iniciTemp = findViewById(R.id.iniciTemp)
+        iniciAvui = findViewById(R.id.textView4)
+
+
         // Mètodes que s'executa en inici
         botoMenu()
         dadesDelCarrusel()
@@ -73,6 +92,7 @@ class Inici : AppCompatActivity() {
         botoNovetats()
         canviarDescripcioReserva()
         botoReserva()
+        obtenirClima()
 
     }
 
@@ -171,6 +191,55 @@ class Inici : AppCompatActivity() {
 
         currentCarouselIndex = (currentCarouselIndex + 1) % carouselItems.size
     }
+
+    private fun obtenirClima() {
+        val apiKey = "d063deacb21c82b30fb600389667cf8e"
+        val latitude = 41.60059809245593
+        val longitude = 1.8295780980270278
+        val apiUrl = "http://api.openweathermap.org/data/2.5/weather?lat=$latitude&lon=$longitude&appid=$apiKey&units=metric&lang=ca"
+
+        CoroutineScope(Dispatchers.IO).launch {
+            try {
+                val response = URL(apiUrl).readText()
+                Log.d("IniciActivity", "API Response: $response")
+                withContext(Dispatchers.Main) {
+                    val jsonObj = JSONObject(response)
+                    val main = jsonObj.getJSONObject("main")
+                    val weather = jsonObj.getJSONArray("weather").getJSONObject(0)
+                    val temperature = main.getString("temp") + "°C"
+                    val weatherCondition = weather.getString("main")
+                    val weatherDescription = weather.getString("description")
+                    val dateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
+                    val date = dateFormat.format(Date())
+
+                    Log.d("IniciActivity", "Temperature: $temperature, Condition: $weatherCondition, Description: $weatherDescription, Date: $date")
+
+                    iniciTemp.text = temperature
+                    iniciTipus.text = when (weatherCondition) {
+                        "Clear" -> "Assolellat"
+                        "Clouds" -> "Ennuvolat"
+                        "Rain" -> "Plujós"
+                        else -> weatherDescription
+                    }
+
+                    iniciIcon.setImageResource(
+                        when (weatherCondition) {
+                            "Clear" -> R.drawable.sol
+                            "Clouds" -> R.drawable.nuvol
+                            "Rain" -> R.drawable.pluja
+                            else -> R.drawable.idioma
+                        }
+                    )
+
+                    iniciAvui.text = date
+                }
+            } catch (e: Exception) {
+                Log.e("IniciActivity", "Error fetching weather data", e)
+                e.printStackTrace()
+            }
+        }
+    }
+
 
     // Mètodes heretats que s'utilitza al carrusel
     override fun onStart() {

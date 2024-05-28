@@ -92,22 +92,21 @@
 
             <ImageView
                 android:id="@+id/iniciIcon"
-                android:layout_width="81dp"
-                android:layout_height="82dp"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
                 android:layout_marginStart="16dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.483"
+                app:layout_constraintVertical_bias="0.4"
                 app:srcCompat="@drawable/baseline_warning_amber_24" />
 
             <TextView
                 android:id="@+id/iniciTipus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
                 android:layout_marginTop="16dp"
-                android:text="@string/iniciTipus"
+                android:text="Prova"
                 android:textColor="#5F574F"
                 android:textSize="25sp"
                 android:textStyle="bold"
@@ -121,12 +120,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="@string/iniciTemp"
+                android:text="34"
                 android:textColor="#5F574F"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.117"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@id/iniciIcon"
                 app:layout_constraintTop_toBottomOf="@id/iniciTipus" />
 
@@ -136,7 +135,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:layout_marginBottom="20dp"
-                android:text="@string/iniciAvui"
+                android:text=""
                 android:textColor="#5F574F"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -200,13 +199,14 @@
                 android:id="@+id/iniciReserveTitol"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 android:fontFamily="sans-serif-light"
                 android:text="@string/iniciReserveTitol"
                 android:textColor="#5F574F"
                 android:textSize="23sp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toStartOf="@id/iniciReservaData"
-                app:layout_constraintHorizontal_bias="0.645"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.197"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/reservaImatge" />
 
