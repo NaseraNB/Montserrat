@@ -67,7 +67,7 @@
 
         <TextView
             android:id="@+id/transportAvis"
-            android:layout_width="wrap_content"
+            android:layout_width="876dp"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/avis_prova"
             android:drawablePadding="20dp"
@@ -491,10 +491,10 @@
             android:id="@+id/liniaTransport"
             android:layout_width="100dp"
             android:layout_height="3dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="4dp"
             android:background="#5F574F"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.739"
+            app:layout_constraintHorizontal_bias="0.749"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView10" />
 

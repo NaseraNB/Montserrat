@@ -60,7 +60,7 @@
 
         <TextView
             android:id="@+id/transportAvis"
-            android:layout_width="wrap_content"
+            android:layout_width="876dp"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/avis_prova"
             android:drawablePadding="20dp"
@@ -199,14 +199,13 @@
             android:id="@+id/imageView4"
             android:layout_width="164dp"
             android:layout_height="138dp"
-            android:layout_marginStart="32dp"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="184dp"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             android:tint="#80000000"
-            app:layout_constraintEnd_toStartOf="@+id/guideline44"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.548"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/lineTres"
             app:shapeAppearanceOverlay="@style/radiuse"
@@ -284,11 +283,11 @@
             android:id="@+id/liniaTransport"
             android:layout_width="100dp"
             android:layout_height="3dp"
-            android:layout_marginBottom="24dp"
+            android:layout_marginBottom="32dp"
             android:background="#5F574F"
             app:layout_constraintBottom_toTopOf="@+id/lineaFinal"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.823"
+            app:layout_constraintHorizontal_bias="0.816"
             app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

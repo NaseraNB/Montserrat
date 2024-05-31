@@ -65,7 +65,7 @@
             app:layout_constraintGuide_percent="0.92" />
 
         <ImageView
-            android:id="@+id/transportMenu"
+            android:id="@+id/menuT"
             android:layout_width="33dp"
             android:layout_height="34dp"
             app:layout_constraintBottom_toTopOf="@+id/guideline41"
@@ -92,8 +92,8 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <TextView
-            android:id="@+id/novetatsAvis"
-            android:layout_width="wrap_content"
+            android:id="@+id/iniciAvis"
+            android:layout_width="876dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:drawableLeft="@drawable/avis_prova"
@@ -136,13 +136,13 @@
             app:layout_constraintTop_toBottomOf="@+id/novetatsEscolanía" />
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/aeriImatges"
+            android:id="@+id/novetatEscolaniaImatges"
             android:layout_width="347dp"
-            android:layout_height="138dp"
+            android:layout_height="160dp"
             android:layout_marginTop="12dp"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
-            android:tint="#60000000"
+            android:tint="#80000000"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/lineUn"
@@ -157,9 +157,9 @@
             android:background="@drawable/boto_vora_blanca"
             android:text="@string/novetatsReservarActivitat"
             android:textColor="@color/white"
-            app:layout_constraintBottom_toBottomOf="@+id/aeriImatges"
-            app:layout_constraintStart_toStartOf="@+id/aeriImatges"
-            app:layout_constraintTop_toTopOf="@+id/aeriImatges"
+            app:layout_constraintBottom_toBottomOf="@+id/novetatEscolaniaImatges"
+            app:layout_constraintStart_toStartOf="@+id/novetatEscolaniaImatges"
+            app:layout_constraintTop_toTopOf="@+id/novetatEscolaniaImatges"
             app:layout_constraintVertical_bias="0.822" />
 
         <TextView
@@ -172,11 +172,11 @@
             android:textColor="@color/white"
             android:textSize="17dp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/aeriImatges"
-            app:layout_constraintEnd_toEndOf="@+id/aeriImatges"
+            app:layout_constraintBottom_toBottomOf="@+id/novetatEscolaniaImatges"
+            app:layout_constraintEnd_toEndOf="@+id/novetatEscolaniaImatges"
             app:layout_constraintHorizontal_bias="0.583"
             app:layout_constraintStart_toEndOf="@+id/botonReservaEscolania"
-            app:layout_constraintTop_toTopOf="@+id/aeriImatges"
+            app:layout_constraintTop_toTopOf="@+id/novetatEscolaniaImatges"
             app:layout_constraintVertical_bias="0.86" />
 
         <TextView
@@ -191,7 +191,7 @@
             app:layout_constraintEnd_toStartOf="@+id/guideline44"
             app:layout_constraintHorizontal_bias="0.009"
             app:layout_constraintStart_toStartOf="@+id/guideline39"
-            app:layout_constraintTop_toBottomOf="@+id/aeriImatges" />
+            app:layout_constraintTop_toBottomOf="@+id/novetatEscolaniaImatges" />
 
         <View
             android:id="@+id/lineDos"
@@ -208,11 +208,11 @@
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/novetatsSantuariImatge"
             android:layout_width="347dp"
-            android:layout_height="138dp"
+            android:layout_height="160dp"
             android:layout_marginTop="16dp"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
-            android:tint="#60000000"
+            android:tint="#80000000"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/lineDos"
@@ -233,7 +233,7 @@
             app:layout_constraintVertical_bias="0.822" />
 
         <TextView
-            android:id="@+id/escolaniaDataDos"
+            android:id="@+id/santuariDataDos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -277,11 +277,11 @@
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/novetatsAmicsImatge"
             android:layout_width="347dp"
-            android:layout_height="138dp"
+            android:layout_height="160dp"
             android:layout_marginTop="16dp"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
-            android:tint="#60000000"
+            android:tint="#80000000"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.454"
             app:layout_constraintStart_toStartOf="parent"
@@ -303,7 +303,7 @@
             app:layout_constraintVertical_bias="0.822" />
 
         <TextView
-            android:id="@+id/DataTres"
+            android:id="@+id/amicsDataTres"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -368,6 +368,76 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/liniaTransport" />
+
+        <ImageView
+            android:id="@+id/fletxaNovetatsEsquerraEscolania"
+            android:layout_width="36dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintEnd_toEndOf="@+id/novetatEscolaniaImatges"
+            app:layout_constraintHorizontal_bias="0.038"
+            app:layout_constraintStart_toStartOf="@+id/novetatEscolaniaImatges"
+            app:layout_constraintTop_toTopOf="@+id/novetatEscolaniaImatges"
+            app:srcCompat="@drawable/fletxa_novetats_esquerra" />
+
+        <ImageView
+            android:id="@+id/fletxaNovetatsDretaEscolania"
+            android:layout_width="36dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintEnd_toEndOf="@+id/novetatEscolaniaImatges"
+            app:layout_constraintHorizontal_bias="0.967"
+            app:layout_constraintStart_toStartOf="@+id/novetatEscolaniaImatges"
+            app:layout_constraintTop_toTopOf="@+id/novetatEscolaniaImatges"
+            app:srcCompat="@drawable/fletxa_novetats_dreta" />
+
+
+        <ImageView
+            android:id="@+id/fletxaNovetatsEsquerraSantuari"
+            android:layout_width="36dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintEnd_toEndOf="@+id/novetatsSantuariImatge"
+            app:layout_constraintHorizontal_bias="0.038"
+            app:layout_constraintStart_toStartOf="@+id/novetatsSantuariImatge"
+            app:layout_constraintTop_toTopOf="@+id/novetatsSantuariImatge"
+            app:srcCompat="@drawable/fletxa_novetats_esquerra" />
+
+        <ImageView
+            android:id="@+id/fletxaNovetatsDretaSantuari"
+            android:layout_width="36dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintEnd_toEndOf="@+id/novetatsSantuariImatge"
+            app:layout_constraintHorizontal_bias="0.967"
+            app:layout_constraintStart_toStartOf="@+id/novetatsSantuariImatge"
+            app:layout_constraintTop_toTopOf="@+id/novetatsSantuariImatge"
+            app:srcCompat="@drawable/fletxa_novetats_dreta" />
+
+
+        <ImageView
+            android:id="@+id/fletxaNovetatsEsquerraAmics"
+            android:layout_width="36dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintEnd_toEndOf="@+id/novetatsAmicsImatge"
+            app:layout_constraintHorizontal_bias="0.038"
+            app:layout_constraintStart_toStartOf="@+id/novetatsAmicsImatge"
+            app:layout_constraintTop_toTopOf="@+id/novetatsAmicsImatge"
+            app:srcCompat="@drawable/fletxa_novetats_esquerra" />
+
+        <ImageView
+            android:id="@+id/fletxaNovetatsDretaAmics"
+            android:layout_width="36dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintEnd_toEndOf="@+id/novetatsAmicsImatge"
+            app:layout_constraintHorizontal_bias="0.967"
+            app:layout_constraintStart_toStartOf="@+id/novetatsAmicsImatge"
+            app:layout_constraintTop_toTopOf="@+id/novetatsAmicsImatge"
+            app:srcCompat="@drawable/fletxa_novetats_dreta" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

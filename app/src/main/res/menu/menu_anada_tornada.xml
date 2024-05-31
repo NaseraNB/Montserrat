@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/anada_option"
+        android:title="Anada"/>
+    <item
+        android:id="@+id/tornada_option"
+        android:title="Anada i Tornada"/>
+</menu>

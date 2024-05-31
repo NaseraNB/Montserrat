@@ -7,9 +7,7 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
-
     <application
-        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -18,7 +16,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CremalleraDeMontserrat"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <activity
+            android:name=".models.models.Nosaltres"
+            android:exported="false" />
+        <activity
+            android:name=".models.models.Reserves"
+            android:exported="false" />
+        <activity
+            android:name=".models.models.InsertarDatos"
+            android:exported="false"
+            android:label="@string/title_activity_insertar_datos"
+            android:theme="@style/Theme.CremalleraDeMontserrat" />
+        <activity
+            android:name=".models.models.RegistrarAvis"
+            android:exported="false" />
         <activity
             android:name=".models.models.Menu"
             android:exported="false" />

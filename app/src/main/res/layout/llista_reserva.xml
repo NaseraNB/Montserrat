@@ -1,0 +1,78 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/blueBackgroundDos"
+            android:layout_width="367dp"
+            android:layout_height="114dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/gris"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.542"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/blueBackground"
+            android:layout_width="367dp"
+            android:layout_height="16dp"
+            android:background="#5F574F"
+            app:layout_constraintBottom_toBottomOf="@+id/blueBackgroundDos"
+            app:layout_constraintEnd_toEndOf="@+id/blueBackgroundDos"
+            app:layout_constraintStart_toStartOf="@+id/blueBackgroundDos"
+            app:layout_constraintTop_toBottomOf="@+id/dataReserva"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imatgeReserva"
+            android:layout_width="113dp"
+            android:layout_height="67dp"
+            android:layout_marginTop="52dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:tint="#60000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.036"
+            app:layout_constraintStart_toStartOf="@+id/blueBackgroundDos"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/circular"
+            app:srcCompat="@drawable/imagen_uno" />
+
+        <TextView
+            android:id="@+id/reservaTitol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Estrena Històric a l'Escolania"
+            android:textColor="@color/marro"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/blueBackgroundDos"
+            app:layout_constraintHorizontal_bias="0.44"
+            app:layout_constraintStart_toEndOf="@+id/imatgeReserva"
+            app:layout_constraintTop_toTopOf="@+id/imatgeReserva" />
+
+        <TextView
+            android:id="@+id/dataReserva"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dia de la reserva: 20-1-2025"
+            android:textColor="@color/marro"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/blueBackgroundDos"
+            app:layout_constraintHorizontal_bias="0.415"
+            app:layout_constraintStart_toEndOf="@+id/imatgeReserva"
+            app:layout_constraintTop_toBottomOf="@+id/reservaTitol" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

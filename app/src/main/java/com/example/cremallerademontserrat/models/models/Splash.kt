@@ -1,4 +1,6 @@
-// Paquet
+/**
+ * Paquet per a les classes relacionades amb l'aplicació.
+ */
 package com.example.cremallerademontserrat.models.models
 
 // Importacions
@@ -8,7 +10,9 @@ import com.example.cremallerademontserrat.R
 import android.content.Intent
 import android.os.Handler
 
-// Classe
+/**
+ * Activitat de Splash que es mostra quan s'inicia l'aplicació.
+ */
 class Splash : AppCompatActivity() {
 
     // Variables
@@ -22,11 +26,13 @@ class Splash : AppCompatActivity() {
         canviarActivity()
     }
 
-    // Mètode que canvia d'activitat.
+    /**
+     * Funció que canvia a l'activitat següent després del temps especificat.
+     */
     private fun canviarActivity() {
         Handler().postDelayed({
 
-            // Crea un Intent per canviar a la pantalla.
+            // Crea un Intent per canviar a la següent pantalla.
             val intent = Intent(this, Inici::class.java)
 
             // Inicia la nova activitat
@@ -37,5 +43,13 @@ class Splash : AppCompatActivity() {
 
             // Estableix el temps de retard abans de canviar de pantalla.
         }, DURACIO_SPLASH)
+    }
+
+    // Permet que l'usuari no surti de l'splash fins que finalitzin
+    override fun onBackPressed() {
+        super.onBackPressed()
+        val intent = Intent(this@Splash, Splash::class.java)
+        startActivity(intent)
+        finish()
     }
 }

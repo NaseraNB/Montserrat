@@ -4,6 +4,7 @@ package com.example.cremallerademontserrat.models.models
 // Importacions
 import android.content.Intent
 import android.os.Bundle
+import android.text.TextWatcher
 import android.view.*
 import android.widget.ImageView
 import android.widget.PopupMenu
@@ -22,7 +23,9 @@ class Menu : DialogFragment() {
     private lateinit var menuRutes: TextView
     private lateinit var menuInici: TextView
     private lateinit var menuTransport: TextView
-    private lateinit var menuNom: TextView // El TextView para el nombre del usuario
+    private lateinit var menuNom: TextView
+    private lateinit var menuNosaltres: TextView
+    private lateinit var menuReserva: TextView
     private lateinit var database: DatabaseReference
     private lateinit var auth: FirebaseAuth
 
@@ -44,8 +47,10 @@ class Menu : DialogFragment() {
         menuFlecha = view.findViewById(R.id.menuFlecha)
         menuRutes = view.findViewById(R.id.menuRutes)
         menuInici = view.findViewById(R.id.menuInici)
+        menuNosaltres = view.findViewById(R.id.menuNosaltres)
         menuTransport = view.findViewById(R.id.menuTransport)
-        menuNom = view.findViewById(R.id.menuNom) // El TextView para el nombre del usuario
+        menuNom = view.findViewById(R.id.menuNom)
+        menuReserva = view.findViewById(R.id.menuReserva)
 
         // Obtener el nombre del usuario actual
         obtenerNombreUsuario()
@@ -69,6 +74,14 @@ class Menu : DialogFragment() {
 
         menuTanca.setOnClickListener(){
             obrirTacarSessio() // Mètode
+        }
+
+        menuReserva.setOnClickListener(){
+            obrirReserva()
+        }
+
+        menuNosaltres.setOnClickListener(){
+            obrirNosaltres()
         }
     }
 
@@ -110,6 +123,18 @@ class Menu : DialogFragment() {
         dismiss()
     }
 
+    private fun obrirNosaltres() {
+        val intent = Intent(requireContext(), Nosaltres::class.java)
+        startActivity(intent)
+        dismiss()
+    }
+
+    private fun obrirReserva() {
+        val intent = Intent(requireContext(), Reserves::class.java)
+        startActivity(intent)
+        dismiss()
+    }
+
     private fun obrirTransport() {
         val intent = Intent(requireContext(), Transport::class.java)
         startActivity(intent)
@@ -123,7 +148,7 @@ class Menu : DialogFragment() {
     }
 
     private fun obrirTacarSessio() {
-        auth.signOut() // Cerrar sesión
+        auth.signOut()
         val intent = Intent(requireContext(), Inici_De_Sessio::class.java) // Redirigir a la pantalla de inicio de sesión
         startActivity(intent)
         dismiss()

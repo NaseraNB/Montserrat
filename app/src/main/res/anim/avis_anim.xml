@@ -1,0 +1,7 @@
+<!-- res/anim/move_left.xml -->
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromXDelta="100%p"
+    android:toXDelta="-100%p"
+    android:duration="10000"
+    android:repeatCount="infinite"
+    android:interpolator="@android:anim/linear_interpolator" />
