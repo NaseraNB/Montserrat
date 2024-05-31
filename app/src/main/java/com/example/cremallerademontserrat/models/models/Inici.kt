@@ -286,7 +286,6 @@ class Inici : AppCompatActivity() {
                 withContext(Dispatchers.Main) {
 
                     // Agafem les dades
-
                     val jsonObj = JSONObject(response)
                     val main = jsonObj.getJSONObject("main")
                     val weather = jsonObj.getJSONArray("weather").getJSONObject(0)

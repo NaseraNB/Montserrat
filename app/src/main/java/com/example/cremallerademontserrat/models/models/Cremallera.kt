@@ -63,6 +63,7 @@ class Cremallera : AppCompatActivity() {
     private lateinit var botoAnadaTornadaFlecha: ImageView
     private lateinit var cremalleraAvis: View
     private lateinit var transportAvis: TextView
+    private lateinit var transportMenu: ImageView
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -95,6 +96,7 @@ class Cremallera : AppCompatActivity() {
         andaTornada = findViewById(R.id.andaTornada)
         titolanadaTornada = findViewById(R.id.titolanadaTornada)
         botoAnadaTornadaFlecha = findViewById(R.id.botoAnadaTornadaFlecha)
+        transportMenu = findViewById(R.id.transportMenu)
 
         cremalleraAvis = findViewById(R.id.cremalleraAvis)
         transportAvis = findViewById(R.id.transportAvis)
@@ -121,6 +123,10 @@ class Cremallera : AppCompatActivity() {
             mostrarOpcionesDos(it)
         }
 
+        transportAvis.setOnClickListener(){
+            obrirMenu()
+        }
+
         recyclerViewOrigen = findViewById(R.id.recyclerViewOrigen)
         recyclerViewOrigenDos = findViewById(R.id.recyclerViewOrigenDos)
         recyclerViewOrigen.layoutManager = LinearLayoutManager(this)
@@ -141,6 +147,11 @@ class Cremallera : AppCompatActivity() {
 
         avis()
 
+    }
+
+    private fun obrirMenu() {
+        val dialog = Menu()
+        dialog.show(supportFragmentManager, "DialogoMenu")
     }
 
     private fun mostrarOpcionesDos(view: View) {

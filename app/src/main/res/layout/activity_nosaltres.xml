@@ -93,11 +93,12 @@
             android:id="@+id/imageView9"
             android:layout_width="333dp"
             android:layout_height="168dp"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="52dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.423"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/TextNosaltres"
-            app:srcCompat="@drawable/logo_institut_castellet" />
+            app:srcCompat="@drawable/ins" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

@@ -86,7 +86,7 @@ class Reserves : AppCompatActivity() {
                         }
 
                         override fun onCancelled(databaseError: DatabaseError) {
-                            mostrarMensaje("Error al acceder a los datos de novetats.")
+                            mostrarMensaje("Error en accedir a les dades de novetats.")
                         }
                     })
                 }
@@ -95,7 +95,7 @@ class Reserves : AppCompatActivity() {
             // Mostrar las reservas en el RecyclerView después de obtener todos los datos
             mostrarReservas(listaReservas)
         } else {
-            mostrarMensaje("No tienes reservas.")
+            mostrarMensaje("No tens reserves.")
         }
     }
 

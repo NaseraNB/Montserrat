@@ -119,12 +119,11 @@ class Registre : AppCompatActivity() {
                 }
                 .addOnFailureListener { e ->
                     // Si ocurre un error al escribir en la base de datos, mostramos un mensaje de error
-                    Log.w("Firebase", "Error writing document", e)
-                    Toast.makeText(this, "ERROR EN LA BASE DE DADES", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Error en la base de dades", Toast.LENGTH_SHORT).show()
                 }
         } else {
             // Si el usuario es nulo, mostramos un mensaje de error
-            Toast.makeText(this, "ERROR AL CREAR L'USUARI", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Error al crea l'usuari", Toast.LENGTH_SHORT).show()
         }
     }
 
